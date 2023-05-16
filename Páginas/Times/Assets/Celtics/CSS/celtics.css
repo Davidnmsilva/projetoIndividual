@@ -192,15 +192,18 @@ header img{
 
 #sectionTimeAtual{
     width: 100%;
+    background: url("./../Imagens/Td-Garden.jpg");
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .jogadores{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 95%;
-    height: 400px;
+    height: 330px;
     position: relative;
 }
 
@@ -210,7 +213,7 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #197c4c;
+    flex-direction: column;
     border-radius: 20px;
     margin: 10px;
     overflow: hidden;
@@ -218,20 +221,17 @@ header img{
 }
 
 .jogador:nth-child(1){
-    left: 0;
+    margin-right: 1000px;
 }
 .jogador:nth-child(2){
-    margin-left: 260px;
+    margin-right: 500px;
     padding-left: 100px;
 }
-.jogador:nth-child(3){
-    margin-left: 510px;
-}
 .jogador:nth-child(4){
-    margin-left: 760px;
+    margin-left: 500px;
 }
 .jogador:nth-child(5){
-    margin-left: 1010px;
+    margin-left: 1000px;
 }
 
 .jogador img{
@@ -245,4 +245,72 @@ header img{
     height: 400px;
 
     background-color: #aaffd6;
+}
+
+.lista-config{
+    display: flex;
+}
+
+.tabelaCeltics{
+    border: 2px solid rgb(0, 113, 43);
+    width: 1000px;
+    margin-bottom: 30px;
+    background-color: #45cc84;
+    padding: 2px;
+}
+
+.tabelaCeltics tr, td{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.tabelaCeltics tr{
+    background-color: #55d394;
+}
+
+.tabelaCeltics tr:nth-child(1){
+    background-color: #22975d;
+    color: white;
+    font-size: 18px;
+}
+
+.listaLegenda{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.legendaPos{
+    margin-right: 30px;
+    width: 300px;
+    height: 150px;
+    background-color: #111111e6;
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(229, 229, 229);
+}
+
+.legendaTop{
+    height: 175px;
+    background-color: #111111e6;
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(229, 229, 229);
+}
+
+.active{
+    animation: zoom 5s ease-in-out infinite;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.0);
+    }
 }

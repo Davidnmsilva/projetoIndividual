@@ -53,7 +53,7 @@ header img{
     height: 800px;
     display: flex;
     justify-content: center;
-    background-color: #008342;
+    background-color: #612086;
 }
 
 #sectionBanner .container img{
@@ -81,7 +81,7 @@ header img{
 }
 
 .time-titulo h1{
-    color: #008342;
+    color: #fdba22;
     font-size: 44px;
 }
 
@@ -102,6 +102,7 @@ header img{
     align-items: center;
     margin-top: 30px;
     width: 500px;
+    background-color: #fdba22;;
 }
 
 .botoes button{
@@ -109,7 +110,8 @@ header img{
      height: 60px;
      font-size: 24px;
      background-color: #222;
-     border: 2px solid #008342;
+     border: 2px solid #     border: 2px solid #008342;
+;
      color: #008342;
      cursor: pointer;
     transition: 0.7s all ease-in-out;

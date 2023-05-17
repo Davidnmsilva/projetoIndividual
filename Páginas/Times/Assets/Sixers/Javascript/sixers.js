@@ -34,9 +34,9 @@ var jogadores = {
         turnovers: 2.3,
         faltas: 2.8
     },
-    dangelo_russel:{
-        nome: "D'Angelo Russell",
-        posicao: "SG",
+    jared_vanderbilt:{
+        nome: "Jared Vanderbilt",
+        posicao: "SF",
         pontos: 8,
         assistencias: 1.4,
         rebotes: 8.3,
@@ -47,7 +47,7 @@ var jogadores = {
     },
     austin_reaves:{
         nome: "Austin Reaves",
-        posicao: "SF",
+        posicao: "SG",
         pontos: 9.8,
         assistencias: 3,
         rebotes: 6.2,
@@ -57,10 +57,10 @@ var jogadores = {
         faltas: 1.9
     }
 }
-
+''
 
 listaJogadores.innerHTML = `
-    <table class="tabelaLakers">
+    <table class="tabelaSixers">
         <tr><td>Posição</td><td>Jogador</td><td>PTS</td><td>AST</td><td>REB</td><td>STL</td><td>BLK</td><td>TOs</td><td>PFs</td></tr>
         
         <tr>
@@ -72,7 +72,7 @@ listaJogadores.innerHTML = `
         </tr>
 
         <tr>
-        <td>${jogadores.dangelo_russel.posicao}</td><td class="j3Text">${jogadores.dangelo_russel.nome}</td><td>${jogadores.dangelo_russel.pontos}</td><td>${jogadores.dangelo_russel.assistencias}</td><td>${jogadores.dangelo_russel.rebotes}</td><td>${jogadores.dangelo_russel.roubos}</td><td>${jogadores.dangelo_russel.tocos}</td><td>${jogadores.dangelo_russel.turnovers}</td><td>${jogadores.dangelo_russel.faltas}</td>
+        <td>${jogadores.jared_vanderbilt.posicao}</td><td class="j3Text">${jogadores.jared_vanderbilt.nome}</td><td>${jogadores.jared_vanderbilt.pontos}</td><td>${jogadores.jared_vanderbilt.assistencias}</td><td>${jogadores.jared_vanderbilt.rebotes}</td><td>${jogadores.jared_vanderbilt.roubos}</td><td>${jogadores.jared_vanderbilt.tocos}</td><td>${jogadores.jared_vanderbilt.turnovers}</td><td>${jogadores.jared_vanderbilt.faltas}</td>
         </tr>
 
         <tr>

@@ -53,7 +53,7 @@ header img{
     height: 800px;
     display: flex;
     justify-content: center;
-    background-color: #612086;
+    background-color: #587f22;
 }
 
 #sectionBanner .container img{
@@ -81,7 +81,7 @@ header img{
 }
 
 .time-titulo h1{
-    color: #fdba22;
+    color: #00450f;
     font-size: 44px;
 }
 
@@ -109,8 +109,8 @@ header img{
      height: 60px;
      font-size: 24px;
      background-color: #222;
-     border: 2px solid #fdba22;;
-     color: #fdba22;
+     border: 2px solid #00450f;;
+     color: #00450f;
      cursor: pointer;
     transition: 0.7s all ease-in-out;
     border-radius: 10px;
@@ -132,7 +132,7 @@ header img{
 
 .time-slogan video{
     width: 500px;
-    border: 2px solid #fdba22;
+    border: 2px solid #00450f;
     border-radius: 2px;
 }
 
@@ -149,7 +149,7 @@ header img{
 }
 
 .time-frase b{
-    color: #fdba22;
+    color: #00450f;
 }
 
 .historia{
@@ -163,7 +163,7 @@ header img{
 
 .historia h1{
     font-size: 34px;
-    color: #fdba22;
+    color: #00450f;
     margin-bottom: 30px;
 }
 
@@ -186,7 +186,7 @@ header img{
 
 .historia-texto p b{
     font-size: 24px;
-    color: #fdba22;
+    color: #00450f;
     margin-top: 40px;
 }
 

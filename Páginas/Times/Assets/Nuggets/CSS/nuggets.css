@@ -53,7 +53,7 @@ header img{
     height: 800px;
     display: flex;
     justify-content: center;
-    background-color: #587f22;
+    background-color: #001c3f;
 }
 
 #sectionBanner .container img{
@@ -81,7 +81,7 @@ header img{
 }
 
 .time-titulo h1{
-    color: #00791a;
+    color: #FFC700;
     font-size: 44px;
 }
 
@@ -109,17 +109,17 @@ header img{
      height: 60px;
      font-size: 24px;
      background-color: #222;
-     border: 2px solid #00791a;;
-     color:  #00791a;
+     border: 2px solid #23456e;
+     color: #23456e;
      cursor: pointer;
     transition: 0.7s all ease-in-out;
     border-radius: 10px;
 }
 
 .botoes button:hover{
-    box-shadow: inset 0px 0px 7px 4px #41a711, 0px 0px 7px 4px #41a711;
-    text-shadow: 0px 0px 10px #41a711;
-    color: #41a711;
+    box-shadow: inset 0px 0px 7px 4px #FFC700, 0px 0px 7px 4px #FFC700;
+    text-shadow: 0px 0px 10px #FFC700;
+    color: #FFC700;
 }
 
 .time-slogan{
@@ -132,7 +132,7 @@ header img{
 
 .time-slogan video{
     width: 500px;
-    border: 2px solid  #00791a;
+    border: 2px solid #23609a;
     border-radius: 2px;
 }
 
@@ -140,7 +140,7 @@ header img{
     color: #f1f1f1;
     font-size: 36px;
     text-transform: uppercase;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .time-frase img{
@@ -149,7 +149,7 @@ header img{
 }
 
 .time-frase b{
-    color:  #00791a;
+    color: #23609a;
 }
 
 .historia{
@@ -163,7 +163,7 @@ header img{
 
 .historia h1{
     font-size: 34px;
-    color:  #00791a;
+    color: #23609a;
     margin-bottom: 30px;
 }
 
@@ -186,7 +186,7 @@ header img{
 
 .historia-texto p b{
     font-size: 24px;
-    color:  #00791a;
+    color: #23609a;
     margin-top: 40px;
 }
 
@@ -205,9 +205,7 @@ header img{
 
 #sectionTimeAtual{
     width: 100%;
-    background: url("./../Imagens/Staples\ Center.jpg");
-    background-position: center;
-    background-size: cover;
+    background: url("./../Imagens/Td-Garden.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,11 +238,10 @@ header img{
 }
 .jogador:nth-child(2){
     margin-right: 500px;
+    padding-left: 100px;
 }
 .jogador:nth-child(4){
     margin-left: 500px;
-    
-    padding-top: 50px;
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
@@ -255,34 +252,30 @@ header img{
     padding-left: 10px;
 }
 
-.jogador:nth-child(4) img{
-    height: 400px;
-}
-
 .lista-config{
     display: flex;
 }
 
-.tabelaLakers{
-    border: 2px solid rgb(66, 0, 55);
+.tabelaSixers{
+    border: 2px solid rgb(74, 0, 21);
     width: 1000px;
     margin-bottom: 30px;
-    background-color: #91007b;
+    background-color: #004b91;
     padding: 2px;
 }
 
-.tabelaLakers tr, td{
-    border: 2px solid rgb(93, 0, 71);
+.tabelaSixers tr, td{
+    border: 2px solid rgb(93, 0, 17);
     padding: 10px;
 }
 
-.tabelaLakers tr{
-    background-color: #fff41d;
+.tabelaSixers tr{
+    background-color: #7bb0ff;
 }
 
-.tabelaLakers tr:nth-child(1){
-    background-color: #420033;
-    color: #e5c200; 
+.tabelaSixers tr:nth-child(1){
+    background-color: #086fff;
+    color: rgb(145, 0, 0);
     font-weight: bold;
     font-size: 18px;
 }

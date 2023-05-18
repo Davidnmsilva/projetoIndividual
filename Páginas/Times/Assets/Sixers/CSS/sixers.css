@@ -117,9 +117,9 @@ header img{
 }
 
 .botoes button:hover{
-    box-shadow: inset 0px 0px 7px 4px #0b3cff, 0px 0px 7px 4px #094bff;
-    text-shadow: 0px 0px 10px #0932ff;
-    color: #0b38ff;
+    box-shadow: inset 0px 0px 7px 4px #2b76e6, 0px 0px 7px 4px #2b76e6;
+    text-shadow: 0px 0px 10px #2b76e6;
+    color: #2b76e6;
 }
 
 .time-slogan{
@@ -132,7 +132,7 @@ header img{
 
 .time-slogan video{
     width: 500px;
-    border: 2px solid #2243fd;
+    border: 2px solid #23609a;
     border-radius: 2px;
 }
 
@@ -149,7 +149,7 @@ header img{
 }
 
 .time-frase b{
-    color: #224afd;
+    color: #23609a;
 }
 
 .historia{
@@ -163,7 +163,7 @@ header img{
 
 .historia h1{
     font-size: 34px;
-    color: #223ffd;
+    color: #23609a;
     margin-bottom: 30px;
 }
 
@@ -186,7 +186,7 @@ header img{
 
 .historia-texto p b{
     font-size: 24px;
-    color: #fdba22;
+    color: #23609a;
     margin-top: 40px;
 }
 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta Inicial! - Conheça a NBA!</title>
+    <link rel="stylesheet" href="Assets/Cadastro/css/style.css">
+</head>
+
+<body>
+    <section id="sectionTela">
+        <div class="cadastroLogin">
+            <div class="logo"><img src="./Assets/Cadastro/Imagens/Logo.png"></div>
+            <h3>Conheça tudo sobre a NBA!</h3>
+            <div class="inputs">
+                <input type="text" id="nome_input" placeholder="Nome:">
+                <input type="email" id="email_input" placeholder="E-mail:">
+                <input type="email" id="confirmarE_input" placeholder="Confirmar E-mail:">
+                <input type="text" id="senha_input" placeholder="Senha:">
+                <input type="text" id="confirmarS_input" placeholder="Confirmar Senha:">
+            </div>
+            <button onclick="cadastrar()">Cadastre-se</button>
+            <h4>Já está cadastrado? Faça login clicando <a href="../Login/login.html">aqui</a>.</h4>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script>
+    function cadastrar() {
+        // aguardar();
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var nomeVar = nome_input.value;
+        var emailVar = email_input.value;
+        var confirmarE = confirmarE_input.value;
+        var senhaVar = senha_input.value;
+        var confirmacaoSenhaVar = confirmarS_input.value;
+
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || confirmarE == "") {
+            // cardErro.style.display = "block"
+            // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+
+            // finalizarAguardar();
+            return false;
+        }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeServer: nomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                // cardErro.style.display = "block";
+
+                // mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+                setTimeout(() => {
+                    window.location = "login.html";
+                }, "2000")
+
+                // limparFormulario();
+                // finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+
+        return false;
+    }
+
+    // function sumirMensagem() {
+    //     cardErro.style.display = "none"
+    // }
+
+</script>

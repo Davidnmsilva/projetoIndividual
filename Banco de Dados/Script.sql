@@ -1,8 +1,11 @@
 CREATE DATABASE projetoIndividual;
 
+USE projetoIndividual;
+
 CREATE TABLE nbaTime(
 idNbaTime int primary key auto_increment,
-nome varchar(45)
+nome varchar(45),
+conferencia varchar(45), constraint chkConferencia check (conferencia in ("Leste", "Oeste"))
 );
 
 CREATE TABLE usuario(
@@ -18,12 +21,6 @@ INSERT INTO nbaTime VALUES
 	(null, 'Atlanta Hawks'),
     (null, 'Boston Celtics'),
     (null, 'Los Angeles Lakers');
-    
-INSERT INTO usuario VALUES
-	(null, 'Davidnms', 'davidnicolas@sptech.school', 'teste123', 2),
-    (null, 'RenataSs', 'renatasantos@hotmail.com', 'teste321', 1),
-    (null, 'MatheusOli', 'matheusoliveira@gmail.com', 'teste132', 2),
-    (null, 'JoaoSilv', 'joaosilva@outlook.com', 'teste213', 3);
     
 SELECT * FROM nbaTime;
 SELECT * FROM usuario;

@@ -9,16 +9,16 @@
     <title>Times - Sixers</title>
 </head>
 
-<body>
+<body onload="carregarJogadores()">
 
     <header>
         <div class="container">
-            <img src="./../../Landing Page/Assets/Imagens/Logos/LogoHeader.png" alt="Logo Site">
+            <img src="./../../Assets/Logos/LogoHeader.png" alt="Logo Site">
             <div class="lista">
                 <ul>
                     <li><a href="">Inicio</a></li>
                     <li><a href="">Times</a></li>
-                    <li><a href="">Jogos</a></li>
+                    <li><a href="">Jogar</a></li>
                 </ul>
             </div>
         </div>
@@ -33,21 +33,21 @@
     <section id="sectionConteudo">
         <div class="container">
             <div class="conteudo">
-                <div class="time-logo"><img src="./../../Landing Page/Assets/Imagens/Logos/76ers.png" alt="76ers Logo"></div>
+                <div class="time-logo"><img src="./../../Assets/Logos/76ers.png" alt="76ers Logo"></div>
                 <div class="time-titulo">
                     <h1>Philadelphia 76ers</h1>
                     <div class="botoes">
-                        <button>História</button>
-                        <button>Atualmente</button>
+                        <a href="#historia">História</a>
+                        <a href="#time-atual">Atualmente</a>
                     </div>
                 </div>
                 <div class="time-slogan">
                     <div class="time-frase"><h2>Together we <b>build</b>!</h2></div>
                     <video autoplay muted loop>
-                        <source src="./../Assets/Celtics/Imagens">
+                        <source src="./../Assets/Sixers/Imagens e Videos/Sixers - Apresentacao.mp4">
                     </video>
                 </div>
-                <div class="historia">
+                <div id="historia">
                     <div class="historia-titulo"><h1>História</h1></div>
                     <div class="historia-texto">    
                         <p>
@@ -176,10 +176,10 @@
 
                             Nas últimas temporadas, porém, o desempenho dos Sixers parece se distanciar desse passado glorioso. Hoje, poucos especialistas apontam a equipe como uma das candidatas ao título. Porém, como já presenciamos em diferentes momentos da história do esporte, a cada temporada é possível construir um novo presente.<br><br>
                         </p>
-                        <div class="time-atual">
+                        <div id="time-atual">
                             <h1>TRUST THE PROCESS!</h1>
                             <p>
-                                Hoje o 76ers está em busca do 18 titulo. Será que o time consegue? Veja abaixo o quinteto atual do 76ers:
+                                Hoje o 76ers está em busca do 4° titulo. Será que o time consegue? Veja abaixo o quinteto atual do 76ers:
                             </p>
                         </div>
                     </div>
@@ -190,11 +190,11 @@
 
     <section id="sectionTimeAtual">
         <div class="jogadores">
-            <div class="jogador j1"><img src="./../Assets/Celtics/Imagens/Time Celtics/Smart.jpg"></div>
-            <div class="jogador j2"><img src="./../Assets/Celtics/Imagens/Time Celtics/Brown.jpg"></div>
-            <div class="jogador j3"><img src="./../Assets/Celtics/Imagens/Time Celtics/Tatum.jpg"></div>
-            <div class="jogador j4"><img src="./../Assets/Celtics/Imagens/Time Celtics/Horford.jpg"></div>
-            <div class="jogador j5"><img src="./../Assets/Celtics/Imagens/Time Celtics/Robert Williams.jpg"></div>
+            <div class="jogador j1"><img src="./../Assets/Sixers/Imagens e Videos/Maxey.jpg"></div>
+            <div class="jogador j2"><img src="./../Assets/Sixers/Imagens e Videos/Harden.webp"></div>
+            <div class="jogador j3"><img src="./../Assets/Sixers/Imagens e Videos/Harris.jpeg"></div>
+            <div class="jogador j4"><img src="./../Assets/Sixers/Imagens e Videos/Tucker.jpeg"></div>
+            <div class="jogador j5"><img src="./../Assets/Sixers/Imagens e Videos/Embiid.webp"></div>
         </div>
         <div class="listaJogadores">
             
@@ -238,7 +238,7 @@
     </section>
 
     <footer>
-        2023 © eMoove - TODOS OS DIREITOS RESERVADOS
+        2023 © David Nicolas - TODOS OS DIREITOS RESERVADOS
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

@@ -205,7 +205,7 @@ header img{
 
 #sectionTimeAtual{
     width: 100%;
-    background: url("./../Imagens/Staples\ Center.jpg");
+    background: url("./../Imagens e Videos/Quadra.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -233,6 +233,7 @@ header img{
     margin: 10px;
     overflow: hidden;
     position: absolute;
+    box-shadow: 0px 0px 5px 1px #ffd000;
 }
 
 .jogador:nth-child(1){
@@ -243,8 +244,7 @@ header img{
 }
 .jogador:nth-child(4){
     margin-left: 500px;
-    
-    padding-top: 50px;
+
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
@@ -255,33 +255,29 @@ header img{
     padding-left: 10px;
 }
 
-.jogador:nth-child(4) img{
-    height: 400px;
-}
-
 .lista-config{
     display: flex;
 }
 
-.tabelaLakers{
-    border: 2px solid rgb(66, 0, 55);
+.tabelaWarriors{
+    border: 2px solid rgb(0, 31, 66);
     width: 1000px;
     margin-bottom: 30px;
-    background-color: #91007b;
+    background-color: #004b91;
     padding: 2px;
 }
 
-.tabelaLakers tr, td{
-    border: 2px solid rgb(93, 0, 71);
+.tabelaWarriors tr, td{
+    border: 2px solid rgb(0, 56, 93);
     padding: 10px;
 }
 
-.tabelaLakers tr{
+.tabelaWarriors tr{
     background-color: #fff41d;
 }
 
-.tabelaLakers tr:nth-child(1){
-    background-color: #420033;
+.tabelaWarriors tr:nth-child(1){
+    background-color: #001f42;
     color: #e5c200; 
     font-weight: bold;
     font-size: 18px;

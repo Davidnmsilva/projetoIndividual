@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -104,7 +105,7 @@ header img{
     width: 500px;
 }
 
-.botoes button{
+.botoes a{
      width: 200px;
      height: 60px;
      font-size: 24px;
@@ -114,9 +115,13 @@ header img{
      cursor: pointer;
     transition: 0.7s all ease-in-out;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-.botoes button:hover{
+.botoes a:hover{
     box-shadow: inset 0px 0px 7px 4px #2b76e6, 0px 0px 7px 4px #2b76e6;
     text-shadow: 0px 0px 10px #2b76e6;
     color: #2b76e6;
@@ -152,7 +157,7 @@ header img{
     color: #23609a;
 }
 
-.historia{
+#historia{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +166,7 @@ header img{
     margin-top: 100px;
 }
 
-.historia h1{
+#historia h1{
     font-size: 34px;
     color: #23609a;
     margin-bottom: 30px;
@@ -194,7 +199,7 @@ header img{
     height: 600px;
 }
 
-.time-atual{
+#time-atual{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -205,7 +210,8 @@ header img{
 
 #sectionTimeAtual{
     width: 100%;
-    background: url("./../Imagens/Td-Garden.jpg");
+    background: url("./../Imagens e Videos/Quadra.webp");
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,16 +241,22 @@ header img{
 
 .jogador:nth-child(1){
     margin-right: 1000px;
+    padding-left: 45px;
 }
 .jogador:nth-child(2){
     margin-right: 500px;
-    padding-left: 100px;
+    padding-left: 20px;
+}
+.jogador:nth-child(3){
+    padding-left: 130px;
 }
 .jogador:nth-child(4){
     margin-left: 500px;
+    padding-right: 40px;
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
+    padding-left: 80px;
 }
 
 .jogador img{

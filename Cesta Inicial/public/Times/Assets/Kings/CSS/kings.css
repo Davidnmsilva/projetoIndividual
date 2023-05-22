@@ -201,7 +201,7 @@ header img{
 
 #sectionTimeAtual{
     width: 100%;
-    background: url("./../Imagens/Td-Garden.jpg");
+    background: url("./../Imagens e Videos/Quadra.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,17 +227,22 @@ header img{
     margin: 10px;
     overflow: hidden;
     position: absolute;
+    box-shadow: 0px 0px 5px 2px rgb(98, 0, 128);
 }
 
 .jogador:nth-child(1){
     margin-right: 1000px;
+    padding-left: 210px;
 }
 .jogador:nth-child(2){
-    margin-right: 500px;
-    padding-left: 100px;
+    margin-right: 505px;
+    padding-right: 70px;
+}
+.jogador:nth-child(3){
+    padding-right: 130px;
 }
 .jogador:nth-child(4){
-    margin-left: 500px;
+    margin-left: 505px;
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
@@ -252,26 +257,26 @@ header img{
     display: flex;
 }
 
-.tabelaCeltics{
-    border: 2px solid rgb(0, 113, 43);
+.tabelaKings{
+    border: 2px solid rgb(62, 0, 113);
     width: 1000px;
     margin-bottom: 30px;
-    background-color: #45cc84;
+    background-color: #7f45cc;
     padding: 2px;
 }
 
-.tabelaCeltics tr, td{
-    border: 1px solid gray;
+.tabelaKings tr, td{
+    border: 1px solid rgb(62, 0, 113);
     padding: 10px;
 }
 
-.tabelaCeltics tr{
-    background-color: #55d394;
+.tabelaKings tr{
+    background-color: #bb80ff;
 }
 
-.tabelaCeltics tr:nth-child(1){
-    background-color: #22975d;
-    color: white;
+.tabelaKings tr:nth-child(1){
+    background-color: #592297;
+    color: rgb(235, 235, 235);
     font-size: 18px;
 }
 

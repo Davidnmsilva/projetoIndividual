@@ -201,7 +201,7 @@ header img{
 
 #sectionTimeAtual{
     width: 100%;
-    background: url("./../Imagens/Td-Garden.jpg");
+    background: url("./../Imagens e Videos/Quadra.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,7 +234,7 @@ header img{
 }
 .jogador:nth-child(2){
     margin-right: 500px;
-    padding-left: 100px;
+    padding-right: 80px;
 }
 .jogador:nth-child(4){
     margin-left: 500px;
@@ -252,25 +252,25 @@ header img{
     display: flex;
 }
 
-.tabelaCeltics{
-    border: 2px solid rgb(0, 113, 43);
+.tabelaGrizzlies{
+    border: 2px solid rgb(0, 77, 113);
     width: 1000px;
     margin-bottom: 30px;
-    background-color: #45cc84;
+    background-color: #45a1cc;
     padding: 2px;
 }
 
-.tabelaCeltics tr, td{
-    border: 1px solid gray;
+.tabelaGrizzlies tr, td{
+    border: 1px solid rgb(0, 106, 124);
     padding: 10px;
 }
 
-.tabelaCeltics tr{
-    background-color: #55d394;
+.tabelaGrizzlies tr{
+    background-color: #55afd3;
 }
 
-.tabelaCeltics tr:nth-child(1){
-    background-color: #22975d;
+.tabelaGrizzlies tr:nth-child(1){
+    background-color: #227697;
     color: white;
     font-size: 18px;
 }

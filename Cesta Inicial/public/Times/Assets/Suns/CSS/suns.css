@@ -140,7 +140,7 @@ header img{
     color: #f1f1f1;
     font-size: 36px;
     text-transform: uppercase;
-    margin-left: 100px;
+    margin-left: 40px;
 }
 
 .time-frase img{
@@ -205,7 +205,7 @@ header img{
 
 #sectionTimeAtual{
     width: 100%;
-    background: url("./../Imagens/Td-Garden.jpg");
+    background: url("./../Imagens e Videos/Quadra.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -231,6 +231,7 @@ header img{
     margin: 10px;
     overflow: hidden;
     position: absolute;
+    box-shadow: 0px 0px 5px 1px orange;
 }
 
 .jogador:nth-child(1){
@@ -238,7 +239,7 @@ header img{
 }
 .jogador:nth-child(2){
     margin-right: 500px;
-    padding-left: 100px;
+    padding-right: 40px;
 }
 .jogador:nth-child(4){
     margin-left: 500px;
@@ -256,26 +257,27 @@ header img{
     display: flex;
 }
 
-.tabelaSixers{
-    border: 2px solid rgb(74, 0, 21);
+.tabelaSuns{
+    border: 2px solid rgb(255, 115, 0);
     width: 1000px;
     margin-bottom: 30px;
-    background-color: #004b91;
+    background-color: #eeb600;
     padding: 2px;
 }
 
-.tabelaSixers tr, td{
-    border: 2px solid rgb(93, 0, 17);
+.tabelaSuns tr, td{
+    border: 2px solid rgb(255, 115, 0);
     padding: 10px;
 }
 
-.tabelaSixers tr{
-    background-color: #7bb0ff;
+.tabelaSuns tr{
+    background-color: #ffd17b;
+    color: #563270;
 }
 
-.tabelaSixers tr:nth-child(1){
-    background-color: #086fff;
-    color: rgb(145, 0, 0);
+.tabelaSuns tr:nth-child(1){
+    background-color: #ff8c08;
+    color: rgb(110, 77, 172);
     font-weight: bold;
     font-size: 18px;
 }

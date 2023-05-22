@@ -205,7 +205,7 @@ header img{
 
 #sectionTimeAtual{
     width: 100%;
-    background: url("./../Imagens/Td-Garden.jpg");
+    background: url("./../Imagens e Videos/Quadra.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -231,6 +231,7 @@ header img{
     margin: 10px;
     overflow: hidden;
     position: absolute;
+    box-shadow: 0px 0px 5px 1px rgb(163, 163, 163);
 }
 
 .jogador:nth-child(1){
@@ -238,10 +239,16 @@ header img{
 }
 .jogador:nth-child(2){
     margin-right: 500px;
-    padding-left: 100px;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+.jogador:nth-child(3){
+    padding-right: 150px;
 }
 .jogador:nth-child(4){
     margin-left: 500px;
+    padding-top: 100px;
+    padding-right: 50px;
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
@@ -251,31 +258,38 @@ header img{
     height: 300px;
     padding-left: 10px;
 }
+.jogador:nth-child(4) img{
+    height: 400px;
+}
+.jogador:nth-child(2) img{
+    height: 400px;
+}
 
 .lista-config{
     display: flex;
 }
 
-.tabelaSixers{
-    border: 2px solid rgb(74, 0, 21);
+.tabelaNets{
+    border: 2px solid rgb(231, 231, 231);
     width: 1000px;
     margin-bottom: 30px;
-    background-color: #004b91;
+    background-color: #222222;
     padding: 2px;
 }
 
-.tabelaSixers tr, td{
-    border: 2px solid rgb(93, 0, 17);
+.tabelaNets tr, td{
+    border: 2px solid rgb(235, 235, 235);
     padding: 10px;
 }
 
-.tabelaSixers tr{
-    background-color: #7bb0ff;
+.tabelaNets tr{
+    background-color: #838383;
+    color: rgb(226, 226, 226);
 }
 
-.tabelaSixers tr:nth-child(1){
-    background-color: #086fff;
-    color: rgb(145, 0, 0);
+.tabelaNets tr:nth-child(1){
+    background-color: #333333;
+    color: rgb(238, 238, 238);
     font-weight: bold;
     font-size: 18px;
 }

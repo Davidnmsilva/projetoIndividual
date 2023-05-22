@@ -205,7 +205,8 @@ header img{
 
 #sectionTimeAtual{
     width: 100%;
-    background: url("./../Imagens/Td-Garden.jpg");
+    background: url("./../../Wolves/Imagens e Videos/Quadra.jpeg");
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,13 +239,14 @@ header img{
 }
 .jogador:nth-child(2){
     margin-right: 500px;
-    padding-left: 100px;
+    padding-left: 30px;
 }
 .jogador:nth-child(4){
     margin-left: 500px;
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
+    padding-right: 40px;
 }
 
 .jogador img{
@@ -256,7 +258,7 @@ header img{
     display: flex;
 }
 
-.tabelaSixers{
+.tabelaWolves{
     border: 2px solid rgb(74, 0, 21);
     width: 1000px;
     margin-bottom: 30px;
@@ -264,16 +266,16 @@ header img{
     padding: 2px;
 }
 
-.tabelaSixers tr, td{
+.tabelaWolves tr, td{
     border: 2px solid rgb(93, 0, 17);
     padding: 10px;
 }
 
-.tabelaSixers tr{
+.tabelaWolves tr{
     background-color: #7bb0ff;
 }
 
-.tabelaSixers tr:nth-child(1){
+.tabelaWolves tr:nth-child(1){
     background-color: #086fff;
     color: rgb(145, 0, 0);
     font-weight: bold;

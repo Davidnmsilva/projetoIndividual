@@ -2,57 +2,70 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="shortcut icon" href="../assets/icon/favicon2.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaTech | Avisos</title>
+    <title>Cesta Inicial | Comentários</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="./dashboards.css">
+    <link rel="stylesheet" href="../css/styleMural.css">
     <script src="../js/funcoes.js"></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
 <!-- onload="validarSessao(), atualizarFeed()" -->
-<body  style="background-color: #161618;">
+<body onload="validarSessao(), atualizarFeed()" style="background-color: #161618;">
     <!-- <body onload="validarSessao()"> -->
+    <div class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3 "></div>
+    </div>
 
-    <div class="janela">
-
-
-        <!-- <div class="header-left">
-
-            <h1>AquaTech</h1>
-
-            <div class="hello">
-                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+    <header>
+        <div class="container">
+            <img src="./../Assets/Logos/LogoHeader.png" alt="Logo Site">
+            <div class="lista">
+                <ul>
+                    <li><a href="./../indexL.html">Inicio</a></li>
+                    <li><a href="./cadastro.html">Times</a></li>
+                    <li><a href="./login.html">Jogar</a></li>
+                    <li><a href="./dashboard/mural.html">Mural</a></li>
+                </ul>
             </div>
+        </div>
+    </header>
 
-            <div class="btn-nav-white">
-                <a href="cards.html">
-                    <h3>Aquários</h3>
-                </a>
+    <section id="sectionMural">
+        <div class="container">
+            <h1>Publicar um comentário</h1>
+            <div class="div-form">
+                <form id="form_postagem" method="post" onsubmit="return publicar()">
+                    <label>
+                        Título:
+                        <br>
+                        <input name="titulo" autocomplete="off" id="titulo" maxlength="100" type="text">
+                    </label>
+                    <br>
+                    <label>
+                        Descrição (máximo de 250 caracteres):
+                        <br>
+                        <textarea name="descricao" id="textarea_descricao" maxlength="250" rows="5"></textarea>
+                    </label>
+                    <br>
+                    <button>Enviar</button>
+                </form>
             </div>
-
-            <div class="btn-nav-white">
-                <a href="./dashboard.html">
-                    <h3>Gráficos</h3>
-                </a>
+            <h1>Mural de Comentários</h1>
+            <div class="div-results">
+                <div id="feed_container" class="feed-container">
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="btn-nav">
-                <h3>Mural de Avisos</h3>
-            </div>
-
-            <div class="btn-logout" onclick="limparSessao()">
-                <h3>Sair</h3>
-            </div>
-
-        </div> -->
+    <!-- <div class="janela">
 
         <div class="dash-right">
 
@@ -82,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -98,7 +111,7 @@
 
             <!-- AGUARDAR -->
             <!-- <div id="div_aguardar" class="div-aguardar">
-                <img src="./assets/aguarde-pink3.gif" id="img_aguarde">
+                <img src="./../Assets/aguarde-pink3.gif" id="img_aguarde">
             </div>  -->
 
         </div>
@@ -112,8 +125,6 @@
 </html>
 
 <script>
-    
-    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
     function limparFormulario() {
         document.getElementById("form_postagem").reset();
@@ -149,7 +160,7 @@
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-            finalizarAguardar();
+            // finalizarAguardar();
         });
 
         return false;
@@ -193,9 +204,9 @@
                 if (resposta.status == 204) {
                     var feed = document.getElementById("feed_container");
                     var mensagem = document.createElement("span");
-                    mensagem.innerHTML = "Nenhum resultado encontrado."
+                    mensagem.innerHTML = "Nenhum comentário encontrado."
                     feed.appendChild(mensagem);
-                    throw "Nenhum resultado encontrado!!";
+                    throw "Nenhum comentário encontrado!!";
                 }
 
                 resposta.json().then(function (resposta) {
@@ -250,30 +261,15 @@
                         feed.appendChild(divPublicacao);
                     }
 
-                    finalizarAguardar();
+                    // finalizarAguardar();
                 });
             } else {
                 throw ('Houve um erro na API!');
             }
         }).catch(function (resposta) {
-            console.error(resposta);
-            finalizarAguardar();
+            // console.error(resposta);
+            // finalizarAguardar();
         });
-    }
-
-    function testar() {
-        aguardar();
-
-        var formulario = new URLSearchParams(new FormData(document.getElementById("form_postagem")));
-
-        var divResultado = document.getElementById("div_feed");
-
-        divResultado.appendChild(document.createTextNode(formulario.get("descricao")));
-        divResultado.innerHTML = formulario.get("descricao");
-
-        finalizarAguardar();
-
-        return false;
     }
 
 </script>

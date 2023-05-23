@@ -64,7 +64,7 @@ header img{
 }
 
 #banner img{
-  height: 700px;
+  height: 620px;
   position: relative;
 }
 
@@ -73,7 +73,7 @@ header img{
   height: fit-content;
   display: flex;
   justify-content: center;
-  background-color: #333;
+  background-color: #161616;
   position: relative;
   padding-top: 30px;
 }
@@ -90,7 +90,7 @@ header img{
 }
 
 #sectionConteudo h1 b{
-  color: #ffe100;
+  color: #ffbb00;
 }
 
 #sectionConteudo h2{
@@ -142,9 +142,9 @@ header img{
 }
 
 .texto-cadastro p b{
-  color: #ead435;
+  color: #eaab35;
   font-weight: 600;
-  border-bottom: 2px solid #d0b800;
+  border-bottom: 2px solid #d0a000;
   padding-bottom: 5px;
 }
 
@@ -165,18 +165,18 @@ header img{
   width: 170px;
   padding: 10px;
   background: transparent;
-  border: 2px solid #ffe100;
+  border: 2px solid #ffbb00;
   font-size: 24px;
-  color: #ffe100;
+  color: #ffbb00;
   cursor: pointer;
-  text-shadow: 0px 0px 10px 10px #ffec5a;
+  text-shadow: 0px 0px 10px 10px #ffbd5a;
 
 }
 
 .botoes button:hover{
-  box-shadow: inset 0px 0px 5px 2px #ffe100, 0px 0px 10px 3px #ffe100;
+  box-shadow: inset 0px 0px 5px 2px #ffc400, 0px 0px 10px 3px #ffc400;
   transition: all 0.5s;
-  color: #ffec5a;
+  color: #ffc55a;
 }
 
 #sectionConteudo h1:nth-child(2){
@@ -220,9 +220,9 @@ header img{
   border-radius: 10px;
 }
 .link-times a:hover{
-  color: #ffec5a;
+  color: #ffcb5a;
   transition: all 0.4s ease-in-out;
-  border-color: #ffe100;
+  border-color: #ffc400;
 }
 
 .link-jogo{
@@ -248,9 +248,9 @@ header img{
   border-radius: 10px;
 }
 .link-jogo a:hover{
-  color: #ffec5a;
+  color: #ffd35a;
   transition: all 0.4s ease-in-out;
-  border-color: #ffe100;
+  border-color: #ffc400;
 }
 
 .link-mural{
@@ -277,7 +277,7 @@ header img{
 .link-mural a:hover{
   color: #ffec5a;
   transition: all 0.4s ease-in-out;
-  border-color: #ffe100;
+  border-color: #ffd000;
 }
 
 footer{

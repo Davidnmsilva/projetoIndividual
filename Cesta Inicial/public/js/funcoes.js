@@ -61,3 +61,10 @@ function irLogin(){
         window.location = "./login.html";
     }, 2000)
 }
+
+function trocarImg(){
+    var imagem = document.createElement("img");
+    var layout = document.getElementsByClassName("time-layout");
+
+    layout.innerHTML = imagem.setAttribute('src', './../Times/Assets/Hawks/Imagens e Videos/Hawks.jpg');
+}

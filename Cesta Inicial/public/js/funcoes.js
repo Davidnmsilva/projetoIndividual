@@ -68,3 +68,81 @@ function trocarImg(){
 
     layout.innerHTML = imagem.setAttribute('src', './../Times/Assets/Hawks/Imagens e Videos/Hawks.jpg');
 }
+
+var jogadores;
+
+function carregarJogadores(nomeTime){
+
+    // fetch("/jogadores/listar").then(function (resposta) {
+    //     if (resposta.ok) {
+    //         if (resposta.status == 204) {
+    //             console.log(JSON.stringify(resposta))
+    //         }
+    //         jogadores = JSON.stringify(resposta);
+    //         resposta.json().then(function (resposta) {
+    //             jogadores = resposta;
+    //             tabelaJogadores();
+    //             // console.log("Dados recebidos: ", JSON.stringify(resposta));
+    //         });
+    //     } else {
+    //         throw ('Houve um erro na API!');
+    //     }
+    // }).catch(function (resposta) {
+    //     console.error(resposta);
+    // });
+
+    fetch(`/jogadores/listarPorTime/${nomeTime}`).then(function (resposta) {
+        if (resposta.ok) {
+            if (resposta.status == 204) {
+                console.log(JSON.stringify(resposta))
+            }
+            jogadores = JSON.stringify(resposta);
+            resposta.json().then(function (resposta) {
+                jogadores = resposta;
+                tabelaJogadores();
+                // console.log("Dados recebidos: ", JSON.stringify(resposta));
+            });
+        } else {
+            throw ('Houve um erro na API!');
+        }
+    }).catch(function (resposta) {
+        console.error(resposta);
+    });
+    
+}
+
+var linhaJogador = ``;
+
+function tabelaJogadores(){
+    for(i = 0; i < jogadores.length; i++ ){
+        var posicao = jogadores[i].posicao;
+        var nome = jogadores[i].nome;
+        var pontos = Number(jogadores[i].pontos).toFixed(1);
+        var assistencias = Number(jogadores[i].assistencias).toFixed(1);
+        var rebotes = Number(jogadores[i].rebotes).toFixed(1);
+        var roubadas = Number(jogadores[i].roubadas).toFixed(1);
+        var tocos = Number(jogadores[i].tocos).toFixed(1);
+        var turnovers = Number(jogadores[i].turnovers).toFixed(1);
+        var faltas = Number(jogadores[i].faltas).toFixed(1);
+
+        linhaJogador += `
+        <tr>
+        <td>${posicao}</td>
+        <td>${nome}</td>
+        <td>${pontos}</td>
+        <td>${assistencias}</td>
+        <td>${rebotes}</td>
+        <td>${roubadas}</td>
+        <td>${tocos}</td>
+        <td>${turnovers}</td>
+        <td>${faltas}</td>
+        </tr>`;
+    }
+    
+    listaJogadores.innerHTML = `
+        <table class="tabelaCeltics">
+            <tr><td>Posição</td><td>Jogador</td><td>PTS</td><td>AST</td><td>REB</td><td>STL</td><td>BLK</td><td>TOs</td><td>PFs</td></tr>
+            ${linhaJogador}
+            </table>`
+            ;
+}

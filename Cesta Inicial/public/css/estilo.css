@@ -64,7 +64,7 @@ header img{
 }
 
 #banner img{
-  height: 620px;
+  height: 95%;
   position: relative;
 }
 
@@ -73,7 +73,7 @@ header img{
   height: fit-content;
   display: flex;
   justify-content: center;
-  background-color: #161616;
+  background-color: #0e0e0e;  
   position: relative;
   padding-top: 30px;
 }
@@ -141,11 +141,37 @@ header img{
   margin-bottom: 50px;
 }
 
-.texto-cadastro p b{
-  color: #eaab35;
-  font-weight: 600;
-  border-bottom: 2px solid #d0a000;
-  padding-bottom: 5px;
+.cards{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 340px;
+  height: 180px;
+  padding: 20px;
+
+  background: linear-gradient(135deg, rgba(152, 152, 152, 0.1), rgba(18, 18, 18, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #eee;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  transition: all 1s;
+  color: #ffc400;
 }
 
 .texto-cadastro h4{
@@ -156,17 +182,17 @@ header img{
 }
 
 .botoes{
-  width: 34%;
+  width: 22%;
   display: flex;
   justify-content: space-around;
 }
 
 .botoes button{
-  width: 170px;
+  width: 118px;
   padding: 10px;
   background: transparent;
   border: 2px solid #ffbb00;
-  font-size: 24px;
+  font-size: 18px;
   color: #ffbb00;
   cursor: pointer;
   text-shadow: 0px 0px 10px 10px #ffbd5a;

@@ -9,6 +9,15 @@ function listar() {
     return database.executar(instrucao);
 }
 
+function listarPorTime(nome){
+    var instrucao = `
+        SELECT j.* FROM jogador AS j JOIN nbaTime AS nba ON j.fkTime = nba.idTime WHERE nba.nome = '${nome}';
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
 module.exports = {
-    listar
+    listar,
+    listarPorTime
 };

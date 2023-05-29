@@ -17,7 +17,27 @@ function listarPorTime(nome){
     return database.executar(instrucao);
 }
 
+function listarEstatistica(nome){
+    var instrucao = `
+        SELECT nome, offRtg, defRtg, ptsG, oppPtsg, pace FROM nbaTime WHERE nome = '${nome}';
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+function listarTodasStats(){
+    var instrucao = `
+    SELECT offRtg, defRtg, ptsG, oppPtsG, pace
+    FROM nbaTime
+    ORDER BY offRtg DESC, defRtg DESC, ptsG DESC, oppPtsG DESC, pace DESC;
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
 module.exports = {
     listar,
-    listarPorTime
+    listarPorTime,
+    listarEstatistica,
+    listarTodasStats
 };

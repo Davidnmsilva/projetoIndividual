@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../Assets/Wolves/CSS/wolves.css">
+    <script src="./../../js/funcoes.js"></script>
     <title>Times - Wolves</title>
 </head>
 
-<body onload="carregarJogadores()">
+<body onload="carregarJogadores('Minnesota Timberwolves')">
 
     <header>
         <div class="container">
@@ -152,65 +153,3 @@
 </body>
 
 </html>
-
-<script>
-
-    const ctx = document.getElementById('myChart');
-    const data = {
-    labels: [
-        'Off RTG',
-        'Def RTG',
-        'PTS/G',
-        'Opp PTS/G',
-        'Pace'
-    ],
-    datasets: [{
-        label: 'Celtics Ratings',
-        data: [118, 111.5, 117.9, 111.4, 98.5],
-        fill: true,
-        backgroundColor: '#6ae4a733',
-        borderColor: '#008342',
-        pointBackgroundColor: '#008342',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#004b25',
-        pointHoverBorderColor: '#003a14',
-    }]
-    };
-
-    const config = {
-    type: 'radar',
-    data: data,
-    options: {
-        elements: {
-        line: {
-            borderWidth: 2
-        }
-        },
-        scales:{
-            r:{
-                min:80,
-                max:120,
-                pointLabels:{
-                    font:{
-                        size: 14,
-                    }
-                },
-                angleLines:{
-                    color: "#22975d"
-                },
-                grid:{
-                    color: "#22975d"
-                },
-                ticks:{
-                    color: "#5f5f5f",
-                    backgroundColor: '#333'
-                }
-            },
-            
-        }
-    },
-    };
-
-    new Chart(ctx, config);
-
-</script>

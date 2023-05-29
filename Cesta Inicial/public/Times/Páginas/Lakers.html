@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../Assets/Lakers/CSS/lakers.css">
+    <script src="./../../js/funcoes.js"></script>
     <title>Times - Lakers</title>
 </head>
 
-<body onload="carregarJogadores()">
+<body onload="carregarJogadores('Los Angeles Lakers'), carregarEstatistica('Los Angeles Lakers', '55258333', 'FDB927', '552583')">
 
     <header>
         <div class="container">
             <img src="./../../Assets/Logos/LogoHeader.png" alt="Logo Site">
             <div class="lista">
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Times</a></li>
+                    <li><a href="./../../indexL.html">Inicio</a></li>
+                    <li><a href="./../../times.html">Times</a></li>
                     <li><a href="">Jogos</a></li>
                 </ul>
             </div>
@@ -33,7 +34,7 @@
     <section id="sectionConteudo">
         <div class="container">
             <div class="conteudo">
-                <div class="time-logo"><img src="./../../Landing Page/Assets/Imagens/Logos/Lakers.png" alt="Lakers Logo"></div>
+                <div class="time-logo"><img src="./../../Assets/Logos/Lakers.png" alt="Lakers Logo"></div>
                 <div class="time-titulo">
                     <h1>Los Angeles Lakers</h1>
                     <div class="botoes">
@@ -145,69 +146,3 @@
 </body>
 
 </html>
-
-<script>
-
-    const ctx = document.getElementById('myChart');
-    const data = {
-    labels: [
-        'Off RTG',
-        'Def RTG',
-        'PTS/G',
-        'Opp PTS/G',
-        'Pace'
-    ],
-    datasets: [{
-        label: 'Lakers Ratings',
-        data: [114.5, 113.9, 117.2, 116.6, 101.3],
-        fill: true,
-        backgroundColor: '#edaa1133',
-        borderColor: '#fdba22',
-        pointBackgroundColor: '#fdba22',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fdba22',
-        pointHoverBorderColor: '#ffaa55',
-    }]
-    };
-
-    const config = {
-    type: 'radar',
-    data: data,
-    options: {
-        datasets:{
-            backgroundColor:"black"
-        },
-        elements: {
-        line: {
-            borderWidth: 2
-        }
-        },
-        scales:{
-            r:{
-                min:80,
-                max:120,
-                pointLabels:{
-                    font:{
-                        size: 14,
-                    },
-                    color: "#999"
-                },
-                angleLines:{
-                    color: "#612086"
-                },
-                grid:{
-                    color: "#612086"
-                },
-                ticks:{
-                    color: "#000000",
-                    backdropColor: "#fdba22",
-                }
-            },
-            
-        }
-    },
-    };
-
-    new Chart(ctx, config);
-
-</script>

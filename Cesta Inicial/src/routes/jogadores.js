@@ -11,4 +11,12 @@ router.get("/listarPorTime/:time", function (req, res) {
     jogadoresController.listarPorTime(req, res);
 });
 
+router.get("/listarEstatistica/:time", function (req, res) {
+    jogadoresController.listarEstatistica(req, res);
+});
+
+router.get("/listarTodasStats", function (req, res) {
+    jogadoresController.listarTodasStats(req, res);
+});
+
 module.exports = router;

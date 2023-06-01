@@ -103,6 +103,21 @@ INSERT INTO jogador VALUES
     (null, "Cameron Johnson", "PF", 4.8,	2.1,	1.4,	0.3,	1.1,	2.2,	16.6, 3),
     (null, "Nic Claxton", "C", 9.2,	1.9,	0.9,	2.5,	1.3,	2.8,	12.6, 3);
     
+-- Charlotte Hornets
+INSERT INTO jogador VALUES
+    (null, "Terry Rozier", "PG", 4.1,	5.1,	1.2,	0.3,	2.1,	1.9,	21.1, 4),
+	(null, "Lamelo Ball", "SG", 6.4,	8.4,	1.3,	0.3,	3.6,	3.3,	23.3, 4),
+    (null, "P.J. Washington", "SF", 4.9,	2.4,	0.9,	1.1,	1.5,	2.6,	15.7, 4),
+    (null, "Gordon Hayward", "PF", 4.3,	4.1,	0.8,	0.2,	2.0,	1.4,	14.7, 4),
+    (null, "Kelly Oubre Jr.", "C", 5.2,	1.1,	1.4,	0.4,	1.3,	2.9,	20.3, 4);
+
+-- Chicago Bulls
+INSERT INTO jogador VALUES
+    (null, "Alex Caruso", "PG", 2.9,	2.9,	1.5,	0.7,	1.1,	2.4,	5.6, 5),
+	(null, "Demar DeRozan", "SG", 4.6,	5.1,	1.1,	0.5,	2.1,	2.5,	24.5, 5),
+    (null, "Zach LaVine", "SF", 4.5,	4.2,	0.9,	0.2,	2.5,	2.1,	24.8, 5),
+    (null, "Patrick Williams", "PF", 4.0,	1.2,	0.9,	0.9,	1.2,	1.8,	10.2, 5),
+    (null, "Nikola Vucevic", "C", 11.0,	3.2,	0.7,	0.7,	1.7,	2.2,	17.6, 5);
     
 -- Cleveland Cavaliers
 INSERT INTO jogador VALUES
@@ -111,25 +126,57 @@ INSERT INTO jogador VALUES
     (null, "Isaac Okoro", "SF", 2.5,	1.1,	0.7,	0.4,	0.6,	2.1,	6.4 ,6),
     (null, "Evan Mobley", "PF",	9.0,	2.8,	0.8,	1.5,	1.8,	2.8,	16.2, 6),
     (null, "Jarret Allen", "C", 9.8,	1.7,	0.8,	1.2,	1.4,	2.3,	14.3, 6);
+
+-- Dallas Mavericks
+INSERT INTO jogador VALUES
+	(null, "Kyrie Irving", "PG", 5.0,	6.0,	1.3,	0.6,	1.9,	2.8,	27.0, 7),
+	(null, "Luka Doncic", "SG", 8.6,	8.0,	1.4,	0.5,	3.6,	2.5,	32.4, 7),
+    (null, "Tim Hardaway Jr.", "SF",	3.5,	1.8,	0.7,	0.2,	0.8,	1.7,	14.4, 7),
+    (null, "Reggie Bullock", "PF", 3.6,	1.4,	0.7,	0.2,	0.5,	2.1,	7.2, 7),
+    (null, "Dwight Powell", "C", 4.1,	0.9,	0.6,	0.3,	0.9,	2.8,	6.7, 7);
     
 -- Denver Nuggets
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
     (null, "Jamal Murray", "PG", 4.0,	6.2,	1.0,	0.2,	2.2,	1.6,	20.0, 8),
     (null, "Kentavious Cladwll-Pope", "SG",	9.0,	2.8,	0.8,	1.5,	1.8,	2.8,	16.2, 8),
     (null, "Michael Porter Jr", "SF", 5.5,	1.0,	0.6,	0.5, 1.1,	1.9,	17.4, 8),
     (null, "Aaron Gordon", "PF", 6.6,	3.0,	0.8,	0.8,	1.4,	1.9,	16.3, 8),
     (null, "Nikola Jokic", "C", 11.8,	9.8,	1.3,	0.7,	3.6,	2.5,	24.5, 8);
 
+-- Detroit Pistons
+INSERT INTO jogador VALUES
+    (null, "Cade Cunningham", "PG", 6.2,	6.0,	0.8,	0.6,	3.3,	2.8,	19.9, 9),
+    (null, "Jaden Ivey", "SG",	3.9,	5.2,	0.8,	0.2,	3.2,	3.3,	16.3, 9),
+    (null, "Bojan Bogdanovic", "SF", 3.8,	2.6,	0.6,	0.1,	2.3,	1.9,	21.6, 9),
+    (null, "Isaiah Stewart", "PF", 8.1,	1.4,	0.4,	0.7,	1.4,	2.7,	11.3, 9),
+    (null, "James Wiseman", "C", 8.1,	0.7,	0.2,	0.8,	1.5,	2.9,	12.7, 9);
+
 -- Golden State Warriors 
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
 	(null, "Stephen Curry", "PG", 6.1,	6.3,	0.9,	0.4,	3.2,	2.1,	29.4, 10),
     (null, "Klay Thompson", "SG", 4.1,	2.4,	0.7,	0.4,	1.8,	1.9,	21.9, 10),
     (null, "Andrew Wiggins", "SF", 5.0,	2.3,	1.2,	0.8,	1.3,	2.9,	17.1, 10),
     (null, "Draymond Green", "PF", 7.2,	6.8,	1.0,	0.8,	2.8,	3.1,	8.5, 10),
     (null, "Kevon Looney", "C",	9.3,	2.5,	0.6,	0.6,	0.5,	2.7,	7.0, 10);
 
+-- Houston Rockets 
+INSERT INTO jogador VALUES
+	(null, "Kevin Porter Jr.", "PG", 5.3,	5.7,	1.4,	0.3,	3.2,	2.6,	19.2, 11),
+    (null, "Jalen Green", "SG", 3.7,	3.7,	0.8,	0.2,	2.6,	1.7,	22.1, 11),
+    (null, "Jabari Smith Jr.", "SF", 7.2,	1.3,	0.5,	0.9,	1.3,	2.9,	12.8, 11),
+    (null, "Kenyon Martin Jr.", "PF", 5.5,	1.5,	0.5,	0.4,	1.1,	1.8,	12.7, 11),
+    (null, "Alperen Sengun", "C", 9.0, 3.9,	0.9,	0.9,	2.6,	3.4,	14.8, 11);
+
+-- Indiana Pacers 
+INSERT INTO jogador VALUES
+	(null, "Tyrese Haliburton", "PG", 3.7,	10.4,	1.6,	0.4,	2.5,	1.2,	20.7, 12),
+    (null, "Buddy Hield", "SG", 5.0,	2.8,	1.2,	0.3,	1.7,	2.0,	16.8, 12),
+    (null, "Bennedict Mathurin", "SF", 4.1,	1.5,	0.6,	0.2,	1.9,	2.1,	16.7, 12),
+    (null, "Jordan Nwora", "PF", 4.7,	2.1,	0.5,	0.3,	1.3,	1.7,	13.0, 12),
+    (null, "Myles Turner", "C",	7.5,	1.4,	0.6,	2.3,	1.7,	3.5,	18.0, 12);
+
 -- Los Angeles Clippers
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
     (null, "Russell Westbrook", "PG",	4.9,	7.6,	1.1,	0.5,	3.4,	2.0,	15.8, 13),
 	(null, "Paul George", "SG", 6.1,	5.1,	1.5,	0.4,	3.1,	2.8,	23.8, 13),
     (null, "Kawhi Leonard", "SF", 6.5,	3.9,	1.4,	0.5,	1.7,	1.6,	23.8, 13),
@@ -137,7 +184,7 @@ INSERT INTO jogador VALUES
     (null, "Ivica Zubac", "C", 9.9,	1.0,	0.4,	1.3,	1.5,	2.9,	10.8, 13);
     
 -- Los Angeles Lakers
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
     (null, "Dennis Schröder", "PG", 2.5,	4.5,	0.8,	0.2,	1.7,	2.2,	12.6, 14),
     (null, "D'Angelo Russell", "SG", 2.9,	6.1,	0.6,	0.5,	2.3,	1.4,	17.4, 14),
 	(null, "Austin Reaves", "SF", 3.0,	3.4,	0.5,	0.3,	1.5,	1.7,	13.0, 14),
@@ -145,7 +192,7 @@ INSERT INTO jogador VALUES
     (null, "Anthony Davis", "C", 12.5,	2.6,	1.1,	2.0,	2.2,	2.6,	25.9, 14);
 
 -- Memphis Grizzlies
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
     (null, "Ja Morant", "PG", 5.9,	8.1,	1.1,	0.3,	3.4,	1.6,	26.2, 15),
     (null, "Desmond Bane", "SG", 5.0,	4.4,	1.0,	0.4,	2.2,	2.6,	21.5, 15),
     (null, "Dillon Brooks", "SF", 3.3,	2.6,	0.9,	0.2,	1.4,	3.3,	14.3, 15),
@@ -153,7 +200,7 @@ INSERT INTO jogador VALUES
     (null, "Steven Adams", "C", 11.5,	2.3,	0.9,	1.1,	1.9,	2.3,	8.6, 15);
 
 -- Miami Heat
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
 	(null, "Kyle Lowry", "PG", 4.1,	5.1,	1.0,	0.4,	1.9,	2.6,	11.2, 16),
     (null, "Tyler Herro", "SG", 5.4,	4.2,	0.8,	0.2,	2.4,	1.5,	20.1, 16),
     (null, "Caleb Martin", "SF", 4.8,	1.6,	1.0,	0.4,	1.1,	2.0,	9.6, 16),
@@ -161,7 +208,7 @@ INSERT INTO jogador VALUES
     (null, "Bam Adebayo", "C", 9.2,	3.2,	1.2,	0.8,	2.5,	2.8,	20.4, 16);
 
 -- Milwaukee Bucks
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
     (null, "Jrue Holiday", "PG", 5.1,	7.4,	1.2,	0.4,	2.9,	1.7,	19.3, 17),
     (null, "Grayson Allen", "SG", 3.3,	2.3,	0.9,	0.2,	1.0,	1.6,	10.4, 17),
     (null, "Bobby Portis", "SF", 9.6,	1.5,	0.4,	0.2,	1.2,	1.6,	14.1, 17),
@@ -169,7 +216,7 @@ INSERT INTO jogador VALUES
     (null, "Brook Lopez", "C", 6.7,	1.3,	0.5,	2.5,	1.4,	2.6,	15.9, 17);
 
 -- Minnesota Timberwolves
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
     (null, "Mike Conley", "PG", 3.1,	5.0,	1.2,	0.2,	1.2,	1.9,	14.0, 18),
     (null, "Jaden McDaniels", "SG", 3.9,	1.9,	0.9,	1.0,	1.4,	3.4,	12.1, 18),
     (null, "Anthony Edwards", "SF", 5.8,	4.4,	1.6,	0.7,	3.3,	2.4,	24.6, 18),
@@ -177,15 +224,39 @@ INSERT INTO jogador VALUES
     (null, "Rudy Gobert", "C", 11.6,	1.2,	0.8,	1.4,	1.7,	3.0,	13.4, 18);
 
 -- New York Knicks
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
     (null, "Jalen Brunson", "PG", 3.5,	6.2,	0.9,	0.2,	2.1,	2.2,	24.0, 19),
     (null, "Josh Hart", "SG", 7.0,	3.6,	1.4,	0.5,	1.5,	2.5,	10.2, 19),
     (null, "RJ Barrett", "SF", 5.0,	2.8,	0.4,	0.2,	2.2,	2.5,	19.6, 19),
 	(null, "Julius Randle", "PF", 10.0,	4.1,	0.6,	0.3,	2.8,	3.0,	25.1, 19),
     (null, "Mitchell Robinson", "C", 9.4,	0.9,	0.9,	1.8,	0.7,	2.7,	7.4, 19);
 
+-- New Orleans Pelicans
+INSERT INTO jogador VALUES
+    (null, "CJ McCollum", "PG", 4.4,	5.7,	0.9,	0.5,	2.4,	2.0,	20.9, 20),
+    (null, "Trey Murphy III", "SG", 3.6,	1.4,	1.1,	0.5,	0.8,	2.0,	14.5, 20),
+    (null, "Brandom Ingram", "SF", 5.5,	5.8,	0.7,	0.4,	3.3,	2.6,	24.7, 20),
+	(null, "Herbert Jones", "PF", 4.1,	2.5,	1.6,	0.6,	1.3,	3.2,	9.8, 20),
+    (null, "Zion Williamson", "C", 7.0,	4.6,	1.1,	0.6,	3.4,	2.2,	26.0, 20);
+
+-- Oklahoma City Thunder
+INSERT INTO jogador VALUES
+    (null, "Shai Gilgeous-Alexander", "PG", 4.8,	5.5,	1.6,	1.0,	2.8,	2.8,	31.4, 21),
+    (null, "Josh Giddey", "SG", 7.9,	6.2,	0.8,	0.4,	2.8,	1.9,	16.6, 21),
+    (null, "Luguentz Dort", "SF", 4.6,	2.1,	1.0,	0.3,	1.2,	3.3,	13.7, 21),
+	(null, "Jalen Williams", "PF", 4.5,	3.3,	1.4,	0.5,	1.6,	2.5,	14.1, 21),
+    (null, "Kenrich Williams", "C", 4.9,	2.0,	0.8,	0.3,	0.6,	2.1,	8.0, 21);
+
+-- Orlando Magic
+INSERT INTO jogador VALUES
+    (null, "Markelle Fultz", "PG", 3.9,	5.7,	1.5,	0.4,	2.3,	2.2,	14.0, 22),
+    (null, "Cole Anthony", "SG", 4.8,	3.9,	0.6,	0.5,	1.5,	2.6,	13.0, 22),
+    (null, "Paolo Banchero", "SF", 6.9,	3.7,	0.8,	0.5,	2.8,	2.2,	20.0, 22),
+	(null, "Franz Wagner", "PF", 4.1,	3.5,	1.0,	0.2,	2.1,	2.3,	18.6, 22),
+    (null, "Wendell Carter Jr.", "C", 8.7,	2.3,	0.5,	0.6,	1.9,	2.8,	15.2, 22);
+
 -- Philadelphia 76ers
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
     (null, "Tyrese Maxey", "PG", 3.5,	6.2,	0.9,	0.2,	2.1,	2.2,	24.0, 23),
     (null, "James Harden", "SG", 7.0,	3.6,	1.4,	0.5,	1.5,	2.5,	10.2, 23),
     (null, "Tobias Harris", "SF", 5.0,	2.8,	0.4,	0.2,	2.2,	2.5,	19.6, 23),
@@ -193,30 +264,58 @@ INSERT INTO jogador VALUES
     (null, "Joel Embiid", "C", 9.4,	0.9,	0.9,	1.8,	0.7,	2.7,	7.4, 23);
 
 -- Phoenix Suns
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
     (null, "Chris Paul", "PG", 6.4,	3.5,	0.3,	1.3,	2.5,	0.9,	26.0, 24),
     (null, "Devin Booker", "SG", 4.5,	5.5,	1.0,	0.3,	2.7,	3.0,	27.8, 24),
     (null, "Torrey Craig", "SF", 5.4,	1.5,	0.6,	0.8,	0.9,	2.3,	7.4, 24),
 	(null, "Kevin Durant", "PF", 6.4,	3.5,	0.3,	1.3,	2.5,	0.9,	26.0, 24),
     (null, "Deandre Ayton", "C", 10.0,	1.7,	0.6,	0.8,	1.8,	2.8,	18.0, 24);
+
+-- Portland Trail Blazers
+INSERT INTO jogador VALUES
+    (null, "Damian Lillard", "PG", 4.8,	7.3,	0.9,	0.3,	3.3,	1.9,	32.2, 25),
+    (null, "Anfernee Simons", "SG", 2.6,	4.1,	0.7,	0.2,	2.,1	2.3,	21.1, 25),
+    (null, "Shaedon Sharpe", "SF", 3.0,	1.2,	0.5,	0.3,	1.0,	1.7,	9.9, 25),
+	(null, "Jerami Grant", "PF", 4.5,	2.4,	0.8,	0.8,	1.8,	2.4,	20.5, 25),
+    (null, "Jusuf Nurkic", "C", 9.1,	2.9,	0.8,	0.8,	2.3,	3.6,	13.3, 25);
     
 
 -- Sacramento Kings
-    INSERT INTO jogador VALUES
+INSERT INTO jogador VALUES
     (null, "De'Aaron Fox", "PG", 4.2,	6.1,	1.1,	0.3,	2.5,	2.4,	25.0, 26),
     (null, "Kevin Huerter", "SG", 3.3,	2.9,	1.1,	0.3,	1.3,	2.4,	15.2, 26),
     (null, "Harrison Barnes", "SF", 4.5,	1.6,	0.7,	0.1,	1.0,	1.3,	15.0, 26),
 	(null, "Keegan Murray", "PF",	4.6,	1.2,	0.8,	0.5,	0.8,	2.0,	12.2, 26),
     (null, "Domantas Sabonis", "C", 12.3,	7.3,	0.8,	0.5,	2.9,	3.5,	19.1, 26);
-    
-SELECT * FROM nbaTime;
-SELECT * FROM usuario;
-SELECT * FROM usuario JOIN nbaTime ON fkTime = idTime;
-SELECT 
-u.nome as 'Nome de usuario',
-nba.nome as 'Time que torce' FROM usuario as u JOIN nbaTime as nba ON fkTime = idTime;
-SELECT
-j.nome AS "Nome do Jogador",
-j.posicao AS "Posição do Jogador",
-j.pontos AS "Pontuação do Jogador"
-FROM jogador AS j JOIN nbaTime AS n ON fkTime = idTime WHERE n.nome = "Boston Celtics";
+
+-- San Antonio Spurs
+INSERT INTO jogador VALUES
+    (null, "Tre Jones", "PG", 3.6,	6.6,	1.3,	0.1,	1.6,	1.4,	12.9, 27),
+    (null, "Devin Vassell", "SG", 3.9,	3.6,	1.1,	0.4,	1.5,	1.5,	18.5, 27),
+    (null, "Keldon Johnson", "SF", 5.0,	2.9,	0.7,	0.2,	2.1,	2.0,	22.0, 27),
+	(null, "Jeremy Sochan", "PF", 5.3,	2.5,	0.8,	0.4,	1.7,	2.5,	11.0, 27),
+    (null, "Zach Collins", "C", 6.4,	2.9,	0.6,	0.8,	2.0,	3.2,	11.6, 27);
+
+-- Toronto Raptors
+INSERT INTO jogador VALUES
+    (null, "Fred VanVleet", "PG", 4.1,	7.2,	1.8,	0.6,	2.0,	2.8,	19.3, 28),
+    (null, "OG Anunoby", "SG", 5.0,	2.0,	1.9,	0.7,	2.0,	3.0,	16.8, 28),
+    (null, "Scottie Barnes", "SF", 6.6,	4.8,	1.1,	0.8,	2.0,	2.2,	15.3, 28),
+	(null, "Pascal Siakam", "PF", 7.8,	5.8,	0.9,	0.5,	2.4,	3.2,	24.2, 28),
+    (null, "Jakob Poeltl", "C", 9.1,	2.2,	1.2,	1.3,	1.1,	3.0,	13.1, 28);
+
+-- Utah Jazz
+INSERT INTO jogador VALUES
+    (null, "Collin Sexton", "PG", 2.2,	2.9,	0.6,	0.1,	1.8,	2.3,	14.3, 29),
+    (null, "Jordan Clarkson", "SG", 4.0,	4.4,	0.5,	0.2,	3.0,	2.0,	20.8, 29),
+    (null, "Lauri Markkanen", "SF", 8.6,	1.9,	0.6,	0.6,	1.9,	2.1,	25.6, 29),
+	(null, "Kelly Olynyk", "PF", 6.2,	3.7,	0.9,	0.5,	2.5,	3.4,	12.5, 29),
+    (null, "Walker Kessler", "C", 8.4,	0.9,	0.4,	2.3,	0.8,	2.3,	9.2, 29);
+
+-- Washington Wizards
+INSERT INTO jogador VALUES
+    (null, "Monte Morris", "PG", 3.4,	5.3,	0.7,	0.2,	1.0,	1.2,	10.3, 30),
+    (null, "Bradley Beal", "SG", 3.9,	5.4,	0.9,	0.7,	2.9,	2.1,	23.2, 30),
+    (null, "Kyle Kuzma", "SF", 7.2,	3.7,	0.6,	0.5,	3.0,	2.3,	21.2, 30),
+	(null, "Kristaps Porzingis", "PF", 8.4,	2.7,	0.9,	1.5,	2.1,	3.0,	23.2, 30),
+    (null, "Daniel Gafford", "C", 5.6,	1.1,	0.4,	1.3,	1.1,	2.4,	9.0, 30);

@@ -268,7 +268,7 @@ header img{
     display: flex;
 }
 
-.tabelaSixers{
+.tabela76ers{
     border: 2px solid rgb(74, 0, 21);
     width: 1000px;
     margin-bottom: 30px;
@@ -276,16 +276,16 @@ header img{
     padding: 2px;
 }
 
-.tabelaSixers tr, td{
+.tabela76ers tr, td{
     border: 2px solid rgb(93, 0, 17);
     padding: 10px;
 }
 
-.tabelaSixers tr{
+.tabela76ers tr{
     background-color: #7bb0ff;
 }
 
-.tabelaSixers tr:nth-child(1){
+.tabela76ers tr:nth-child(1){
     background-color: #086fff;
     color: rgb(145, 0, 0);
     font-weight: bold;

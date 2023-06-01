@@ -269,7 +269,7 @@ header img{
     display: flex;
 }
 
-.tabelaSixers{
+.tabelaHornets{
     border: 2px solid rgb(74, 0, 21);
     width: 1000px;
     margin-bottom: 30px;
@@ -277,16 +277,16 @@ header img{
     padding: 2px;
 }
 
-.tabelaSixers tr, td{
+.tabelaHornets tr, td{
     border: 2px solid rgb(93, 0, 17);
     padding: 10px;
 }
 
-.tabelaSixers tr{
+.tabelaHornets tr{
     background-color: #7bb0ff;
 }
 
-.tabelaSixers tr:nth-child(1){
+.tabelaHornets tr:nth-child(1){
     background-color: #086fff;
     color: rgb(145, 0, 0);
     font-weight: bold;
@@ -320,7 +320,7 @@ header img{
 
 #sectionEstatistica{
     width: 100%;
-    height: 900px;
+    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -328,13 +328,6 @@ header img{
     background-color: #222;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-.graficosInfo{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding-top: 30px;
 }
 
 .grafico{

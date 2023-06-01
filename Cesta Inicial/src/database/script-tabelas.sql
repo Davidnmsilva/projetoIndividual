@@ -186,28 +186,28 @@ INSERT INTO jogador VALUES
 
 -- Philadelphia 76ers
     INSERT INTO jogador VALUES
-    (null, "Tyrese Maxey", "PG", 3.5,	6.2,	0.9,	0.2,	2.1,	2.2,	24.0, 20),
-    (null, "James Harden", "SG", 7.0,	3.6,	1.4,	0.5,	1.5,	2.5,	10.2, 20),
-    (null, "Tobias Harris", "SF", 5.0,	2.8,	0.4,	0.2,	2.2,	2.5,	19.6, 20),
-	(null, "P.J. Tucker", "PF", 3.9,	0.8,	0.5,	0.2,	0.6,	2.4,	3.5, 20),
-    (null, "Joel Embiid", "C", 9.4,	0.9,	0.9,	1.8,	0.7,	2.7,	7.4, 20);
+    (null, "Tyrese Maxey", "PG", 3.5,	6.2,	0.9,	0.2,	2.1,	2.2,	24.0, 23),
+    (null, "James Harden", "SG", 7.0,	3.6,	1.4,	0.5,	1.5,	2.5,	10.2, 23),
+    (null, "Tobias Harris", "SF", 5.0,	2.8,	0.4,	0.2,	2.2,	2.5,	19.6, 23),
+	(null, "P.J. Tucker", "PF", 3.9,	0.8,	0.5,	0.2,	0.6,	2.4,	3.5, 23),
+    (null, "Joel Embiid", "C", 9.4,	0.9,	0.9,	1.8,	0.7,	2.7,	7.4, 23);
 
 -- Phoenix Suns
     INSERT INTO jogador VALUES
-    (null, "Chris Paul", "PG", 6.4,	3.5,	0.3,	1.3,	2.5,	0.9,	26.0, 21),
-    (null, "Devin Booker", "SG", 4.5,	5.5,	1.0,	0.3,	2.7,	3.0,	27.8, 21),
-    (null, "Torrey Craig", "SF", 5.4,	1.5,	0.6,	0.8,	0.9,	2.3,	7.4, 21),
-	(null, "Kevin Durant", "PF", 6.4,	3.5,	0.3,	1.3,	2.5,	0.9,	26.0, 21),
-    (null, "Deandre Ayton", "C", 10.0,	1.7,	0.6,	0.8,	1.8,	2.8,	18.0, 21);
+    (null, "Chris Paul", "PG", 6.4,	3.5,	0.3,	1.3,	2.5,	0.9,	26.0, 24),
+    (null, "Devin Booker", "SG", 4.5,	5.5,	1.0,	0.3,	2.7,	3.0,	27.8, 24),
+    (null, "Torrey Craig", "SF", 5.4,	1.5,	0.6,	0.8,	0.9,	2.3,	7.4, 24),
+	(null, "Kevin Durant", "PF", 6.4,	3.5,	0.3,	1.3,	2.5,	0.9,	26.0, 24),
+    (null, "Deandre Ayton", "C", 10.0,	1.7,	0.6,	0.8,	1.8,	2.8,	18.0, 24);
     
 
 -- Sacramento Kings
     INSERT INTO jogador VALUES
-    (null, "De'Aaron Fox", "PG", 4.2,	6.1,	1.1,	0.3,	2.5,	2.4,	25.0, 22),
-    (null, "Kevin Huerter", "SG", 3.3,	2.9,	1.1,	0.3,	1.3,	2.4,	15.2, 22),
-    (null, "Harrison Barnes", "SF", 4.5,	1.6,	0.7,	0.1,	1.0,	1.3,	15.0, 22),
-	(null, "Keegan Murray", "PF",	4.6,	1.2,	0.8,	0.5,	0.8,	2.0,	12.2, 22),
-    (null, "Domantas Sabonis", "C", 12.3,	7.3,	0.8,	0.5,	2.9,	3.5,	19.1, 22);
+    (null, "De'Aaron Fox", "PG", 4.2,	6.1,	1.1,	0.3,	2.5,	2.4,	25.0, 26),
+    (null, "Kevin Huerter", "SG", 3.3,	2.9,	1.1,	0.3,	1.3,	2.4,	15.2, 26),
+    (null, "Harrison Barnes", "SF", 4.5,	1.6,	0.7,	0.1,	1.0,	1.3,	15.0, 26),
+	(null, "Keegan Murray", "PF",	4.6,	1.2,	0.8,	0.5,	0.8,	2.0,	12.2, 26),
+    (null, "Domantas Sabonis", "C", 12.3,	7.3,	0.8,	0.5,	2.9,	3.5,	19.1, 26);
     
 SELECT * FROM nbaTime;
 SELECT * FROM usuario;

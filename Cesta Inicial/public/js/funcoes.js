@@ -72,37 +72,18 @@ function trocarImg(){
 // Função para carregar os jogadores para colocar na tabela.
 var jogadores;
 function carregarJogadores(nomeTime){
+    nomeTime.substring();
     fetch(`/jogadores/listarPorTime/${nomeTime}`).then(function (resposta) {
         if (resposta.ok) {
             if (resposta.status == 204) {
                 console.log(JSON.stringify(resposta))
             }
             jogadores = JSON.stringify(resposta);
+            console.log(JSON.stringify(resposta))
             resposta.json().then(function (resposta) {
                 jogadores = resposta;
-                tabelaJogadores();
-                // console.log("Dados recebidos: ", JSON.stringify(resposta));
-            });
-        } else {
-            throw ('Houve um erro na API!');
-        }
-    }).catch(function (resposta) {
-        console.error(resposta);
-    });
-    
-}
-
-var estatisticasOrdenadas;
-function carregarStatsOrdenadas(){
-    fetch(`/jogadores/listarTodasStats`).then(function (resposta) {
-        if (resposta.ok) {
-            if (resposta.status == 204) {
-                console.log(JSON.stringify(resposta))
-            }
-            resposta.json().then(function (resposta) {
-                estatisticasOrdenadas = resposta;
-                criarBoxStats();
-                // console.log("Dados recebidos: ", JSON.stringify(resposta));
+                tabelaJogadores(nomeTime.substring(nomeTime.indexOf(' ') + 1, nomeTime.length));
+                console.log("Dados recebidos: ", JSON.stringify(resposta));
             });
         } else {
             throw ('Houve um erro na API!');
@@ -136,7 +117,7 @@ function carregarEstatistica(nomeTime, corPrincipal, corSecundaria, corTercearia
 
 // Função de criação da tabela de estatisticas dos jogadores.
 var linhaJogador = ``;
-function tabelaJogadores(){
+function tabelaJogadores(time){
     var listaJogadores = document.querySelector(".listaJogadores");
 
     for(i = 0; i < jogadores.length; i++ ){
@@ -170,6 +151,9 @@ function tabelaJogadores(){
             ${linhaJogador}
             </table>`
             ;
+
+    var tabela = document.querySelector('table');
+    tabela.classList.add(`tabela${time}`);
 }
 
 
@@ -245,28 +229,4 @@ function criarGrafico(corP, corS, corT){
     };
 
     new Chart(ctx, config);
-}
-
-function criarBoxStats(){
-    var graficoStats = document.querySelector('.graficoStats');
-
-    // for(var i = 0; i < estatisticasOrdenadas.length; i++){
-        var offRtg = estatisticasOrdenadas[0].offRtg;
-        var defRtg = estatisticasOrdenadas[0].defRtg;
-        var ptsG = estatisticasOrdenadas[0].ptsG;
-        var oppPtsg = estatisticasOrdenadas[0].oppPtsg;
-        var pace = estatisticasOrdenadas[0].pace;
-
-    // }
-    graficoStats.innerHTML = `
-    <div class="grafico-box">
-        <h1>Offensive Rating</h1>
-        <p>${offRtg}</p>
-    </div>
-    <div class="grafico-box"></div>
-    <div class="grafico-box"></div>
-    <div class="grafico-box"></div>
-    <div class="grafico-box"></div>
-    `;
-    
 }

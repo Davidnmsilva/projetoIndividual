@@ -191,6 +191,15 @@ function criarGrafico(corP, corS, corT){
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: `#${cor_fundo}`,
         pointHoverBorderColor: `#${cor_borda}`,
+    },{
+        label: "Médias da Liga",
+        data: [114.8, 114.8, 114.7, 114.7, 99.1],
+        fill: true,
+        borderColor: `#AAAAAACC`,
+        pointBackgroundColor: `#AAA`,
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: `#999`,
+        pointHoverBorderColor: `#AAA`
     }]
     };
 

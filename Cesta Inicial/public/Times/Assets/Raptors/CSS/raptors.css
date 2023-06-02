@@ -15,7 +15,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
 }
 
 .container{
@@ -55,7 +54,7 @@ header img{
     height: 800px;
     display: flex;
     justify-content: center;
-    background-color: #00408D;
+    background-color: #030201;
 }
 
 #sectionBanner .container img{
@@ -83,7 +82,7 @@ header img{
 }
 
 .time-titulo h1{
-    color: #00408D;
+    color: #CE1141;
     font-size: 44px;
 }
 
@@ -111,8 +110,8 @@ header img{
      height: 60px;
      font-size: 24px;
      background-color: #222;
-     border: 2px solid #00408D;
-     color: #00408D;
+     border: 2px solid #CE1141;
+     color: #CE1141;
      cursor: pointer;
     transition: 0.7s all ease-in-out;
     border-radius: 10px;
@@ -123,9 +122,9 @@ header img{
 }
 
 .botoes a:hover{
-    box-shadow: inset 0px 0px 7px 4px #3270bc, 0px 0px 7px 4px #3270bc;
-    text-shadow: 0px 0px 10px #3270bc;
-    color: #3270bc;
+    box-shadow: inset 0px 0px 7px 4px #f74b76, 0px 0px 7px 4px #f74b76;
+    text-shadow: 0px 0px 10px #f74b76;
+    color: #f74b76;
 }
 
 .time-slogan{
@@ -138,16 +137,15 @@ header img{
 
 .time-slogan video{
     width: 500px;
-    border: 2px solid #00408D;
+    border: 2px solid #CE1141;
     border-radius: 2px;
-    margin-right: 50px;
 }
 
 .time-slogan h2{
     color: #f1f1f1;
     font-size: 36px;
     text-transform: uppercase;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .time-frase img{
@@ -156,7 +154,7 @@ header img{
 }
 
 .time-frase b{
-    color: #00408D;
+    color: #CE1141;
 }
 
 #historia{
@@ -170,7 +168,7 @@ header img{
 
 #historia h1{
     font-size: 34px;
-    color: #00408D;
+    color: #CE1141;
     margin-bottom: 30px;
 }
 
@@ -193,7 +191,7 @@ header img{
 
 .historia-texto p b{
     font-size: 24px;
-    color: #00408D;
+    color: #CE1141;
     margin-top: 40px;
 }
 
@@ -239,7 +237,7 @@ header img{
     margin: 10px;
     overflow: hidden;
     position: absolute;
-    box-shadow: 0px 0px 7px 3px #ff5656;
+    box-shadow: 0px 0px 7px 3px #e23e67;
 }
 
 .jogador:nth-child(1){
@@ -248,18 +246,19 @@ header img{
 }
 .jogador:nth-child(2){
     margin-right: 500px;
-    padding-left: 40px;
+    padding-left: 60px;
 }
 .jogador:nth-child(3){
-    padding-right: 10px;
+    padding-right: 90px;
+    padding-left: 80px;
 }
 .jogador:nth-child(4){
     margin-left: 500px;
-    padding-right: 80px;
+    padding-right: 40px;
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
-    padding-right: 30px;
+    padding-left: 0px;
 }
 
 .jogador img{
@@ -271,26 +270,26 @@ header img{
     display: flex;
 }
 
-.tabelaPistons{
-    border: 2px solid #FF2407;
+.tabelaRaptors{
+    border: 2px solid #030014;
     width: 1000px;
     margin-bottom: 30px;
-    background-color: #00408D;
+    background-color: #CE1141;
     padding: 2px;
 }
 
-.tabelaPistons tr, td{
-    border: 2px solid #FF2407;
+.tabelaRaptors tr, td{
+    border: 2px solid #030018;
     padding: 10px;
 }
 
-.tabelaPistons tr{
-    background-color: #ff7b7b;
+.tabelaRaptors tr{
+    background-color: #ff7b98;
 }
 
-.tabelaPistons tr:nth-child(1){
-    background-color: #920000;
-    color: #ffc4bc;
+.tabelaRaptors tr:nth-child(1){
+    background-color: #cf002d;
+    color: #620f24;
     font-weight: bold;
     font-size: 18px;
 }

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -14,7 +15,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
 }
 
 .container{
@@ -54,7 +54,7 @@ header img{
     height: 800px;
     display: flex;
     justify-content: center;
-    background-color: #FFBB00;
+    background-color: #967447;
 }
 
 #sectionBanner .container img{
@@ -82,7 +82,7 @@ header img{
 }
 
 .time-titulo h1{
-    color: #fdba22;
+    color: #85714D;
     font-size: 44px;
 }
 
@@ -105,22 +105,26 @@ header img{
     width: 500px;
 }
 
-.botoes button{
+.botoes a{
      width: 200px;
      height: 60px;
      font-size: 24px;
      background-color: #222;
-     border: 2px solid #fdba22;;
-     color: #fdba22;
+     border: 2px solid #85714D;
+     color: #85714D;
      cursor: pointer;
     transition: 0.7s all ease-in-out;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-.botoes button:hover{
-    box-shadow: inset 0px 0px 7px 4px #ffb60b, 0px 0px 7px 4px #ffb509;
-    text-shadow: 0px 0px 10px #ffb509;
-    color: #ffb60b;
+.botoes a:hover{
+    box-shadow: inset 0px 0px 7px 4px #2fc4df, 0px 0px 7px 4px #2fc4df;
+    text-shadow: 0px 0px 10px #2fc4df;
+    color: #2fc4df;
 }
 
 .time-slogan{
@@ -133,7 +137,7 @@ header img{
 
 .time-slogan video{
     width: 500px;
-    border: 2px solid #fdba22;
+    border: 2px solid #85714D;
     border-radius: 2px;
 }
 
@@ -150,10 +154,10 @@ header img{
 }
 
 .time-frase b{
-    color: #fdba22;
+    color: #85714D;
 }
 
-.historia{
+#historia{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,9 +166,9 @@ header img{
     margin-top: 100px;
 }
 
-.historia h1{
+#historia h1{
     font-size: 34px;
-    color: #fdba22;
+    color: #85714D;
     margin-bottom: 30px;
 }
 
@@ -187,7 +191,7 @@ header img{
 
 .historia-texto p b{
     font-size: 24px;
-    color: #fdba22;
+    color: #85714D;
     margin-top: 40px;
 }
 
@@ -195,7 +199,7 @@ header img{
     height: 600px;
 }
 
-.time-atual{
+#time-atual{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -207,8 +211,7 @@ header img{
 #sectionTimeAtual{
     width: 100%;
     background: url("./../Imagens e Videos/Quadra.jpg");
-    background-position: center;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,21 +237,27 @@ header img{
     margin: 10px;
     overflow: hidden;
     position: absolute;
-    box-shadow: 0px 0px 5px 1px #ffd000;
+    box-shadow: 0px 0px 7px 3px #00a1b6;
 }
 
 .jogador:nth-child(1){
     margin-right: 1000px;
+    padding-right: 20px;
 }
 .jogador:nth-child(2){
     margin-right: 500px;
+    padding-left: 10px;
+}
+.jogador:nth-child(3){
+    /* padding-right: 90px; */
 }
 .jogador:nth-child(4){
     margin-left: 500px;
-
+    padding-left: 40px;
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
+    /* padding-right: 40px; */
 }
 
 .jogador img{
@@ -260,26 +269,26 @@ header img{
     display: flex;
 }
 
-.tabelaWarriors{
-    border: 2px solid rgb(0, 31, 66);
+.tabelaPelicans{
+    border: 2px solid #1A0F62;
     width: 1000px;
     margin-bottom: 30px;
-    background-color: #004b91;
+    background-color: #85714D;
     padding: 2px;
 }
 
-.tabelaWarriors tr, td{
-    border: 2px solid rgb(0, 56, 93);
+.tabelaPelicans tr, td{
+    border: 2px solid #1A0F62;
     padding: 10px;
 }
 
-.tabelaWarriors tr{
-    background-color: #fff41d;
+.tabelaPelicans tr{
+    background-color: #7be5ff;
 }
 
-.tabelaWarriors tr:nth-child(1){
-    background-color: #001f42;
-    color: #e5c200; 
+.tabelaPelicans tr:nth-child(1){
+    background-color: #344d6c;
+    color: #1A0F62;
     font-weight: bold;
     font-size: 18px;
 }
@@ -317,11 +326,18 @@ header img{
     justify-content: center;
     align-items: center;
     background-color: #222;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .grafico{
     width: 500px;
     height: 500px;
+}
+
+.grafico-box{
+    width: 300px;
+    height: 200px;
 }
 
 .texto-estatisticas{

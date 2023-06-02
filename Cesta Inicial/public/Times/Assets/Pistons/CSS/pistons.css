@@ -55,7 +55,7 @@ header img{
     height: 800px;
     display: flex;
     justify-content: center;
-    background-color: #922B2B;
+    background-color: #00408D;
 }
 
 #sectionBanner .container img{
@@ -83,7 +83,7 @@ header img{
 }
 
 .time-titulo h1{
-    color: #922B2B;
+    color: #00408D;
     font-size: 44px;
 }
 
@@ -111,8 +111,8 @@ header img{
      height: 60px;
      font-size: 24px;
      background-color: #222;
-     border: 2px solid #922B2B;
-     color: #922B2B;
+     border: 2px solid #00408D;
+     color: #00408D;
      cursor: pointer;
     transition: 0.7s all ease-in-out;
     border-radius: 10px;
@@ -123,9 +123,9 @@ header img{
 }
 
 .botoes a:hover{
-    box-shadow: inset 0px 0px 7px 4px #cc5454, 0px 0px 7px 4px #cc5454;
-    text-shadow: 0px 0px 10px #cc5454;
-    color: #cc5454;
+    box-shadow: inset 0px 0px 7px 4px #3270bc, 0px 0px 7px 4px #3270bc;
+    text-shadow: 0px 0px 10px #3270bc;
+    color: #3270bc;
 }
 
 .time-slogan{
@@ -138,7 +138,7 @@ header img{
 
 .time-slogan video{
     width: 500px;
-    border: 2px solid #922B2B;
+    border: 2px solid #00408D;
     border-radius: 2px;
     margin-right: 50px;
 }
@@ -156,7 +156,7 @@ header img{
 }
 
 .time-frase b{
-    color: #922B2B;
+    color: #00408D;
 }
 
 #historia{
@@ -170,7 +170,7 @@ header img{
 
 #historia h1{
     font-size: 34px;
-    color: #922B2B;
+    color: #00408D;
     margin-bottom: 30px;
 }
 
@@ -193,7 +193,7 @@ header img{
 
 .historia-texto p b{
     font-size: 24px;
-    color: #922B2B;
+    color: #00408D;
     margin-top: 40px;
 }
 
@@ -248,17 +248,18 @@ header img{
 }
 .jogador:nth-child(2){
     margin-right: 500px;
+    padding-left: 40px;
 }
 .jogador:nth-child(3){
     padding-right: 10px;
 }
 .jogador:nth-child(4){
     margin-left: 500px;
-    padding-left: 30px;
+    padding-right: 80px;
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
-    padding-left: 80px;
+    padding-right: 30px;
 }
 
 .jogador img{
@@ -274,7 +275,7 @@ header img{
     border: 2px solid #FF2407;
     width: 1000px;
     margin-bottom: 30px;
-    background-color: #922B2B;
+    background-color: #00408D;
     padding: 2px;
 }
 

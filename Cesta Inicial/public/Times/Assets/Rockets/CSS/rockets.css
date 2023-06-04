@@ -15,6 +15,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 20;
 }
 
 .container{
@@ -54,7 +55,7 @@ header img{
     height: 800px;
     display: flex;
     justify-content: center;
-    background-color: #F02240;
+    background-color: #F00940;
 }
 
 #sectionBanner .container img{
@@ -122,9 +123,9 @@ header img{
 }
 
 .botoes a:hover{
-    box-shadow: inset 0px 0px 7px 4px #f74b76, 0px 0px 7px 4px #f74b76;
-    text-shadow: 0px 0px 10px #f74b76;
-    color: #f74b76;
+    box-shadow: inset 0px 0px 7px 4px #df2f2f, 0px 0px 7px 4px #df2f2f;
+    text-shadow: 0px 0px 10px #df2f2f;
+    color: #df2f2f;
 }
 
 .time-slogan{
@@ -210,8 +211,9 @@ header img{
 
 #sectionTimeAtual{
     width: 100%;
-    background: url("./../Imagens e Videos/Quadra.png");
-    background-size: contain;
+    background: url("./../Imagens e Videos/Quadra.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,7 +239,7 @@ header img{
     margin: 10px;
     overflow: hidden;
     position: absolute;
-    box-shadow: 0px 0px 7px 3px #e23e67;
+    box-shadow: 0px 0px 7px 3px #b60000;
 }
 
 .jogador:nth-child(1){
@@ -246,19 +248,18 @@ header img{
 }
 .jogador:nth-child(2){
     margin-right: 500px;
-    padding-left: 0px;
+    padding-left: 10px;
 }
 .jogador:nth-child(3){
-    padding-right: 90px;
-    padding-left: 80px;
+    padding-right: 0px;
 }
 .jogador:nth-child(4){
     margin-left: 500px;
-    padding-left: 10px;
+    padding-right: 40px;
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
-    padding-left: 150px;
+    padding-right: 40px;
 }
 
 .jogador img{
@@ -271,7 +272,7 @@ header img{
 }
 
 .tabelaRockets{
-    border: 2px solid #030014;
+    border: 2px solid #161616;
     width: 1000px;
     margin-bottom: 30px;
     background-color: #CE1141;
@@ -279,17 +280,17 @@ header img{
 }
 
 .tabelaRockets tr, td{
-    border: 2px solid #030018;
+    border: 2px solid #5e0000;
     padding: 10px;
 }
 
 .tabelaRockets tr{
-    background-color: #ff7b98;
+    background-color: #ff7b7b;
 }
 
 .tabelaRockets tr:nth-child(1){
-    background-color: #cf002d;
-    color: #620f24;
+    background-color: #cf0000;
+    color: #c4c4c4;
     font-weight: bold;
     font-size: 18px;
 }

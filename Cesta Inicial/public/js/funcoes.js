@@ -82,7 +82,7 @@ function carregarJogadores(nomeTime){
             console.log(JSON.stringify(resposta))
             resposta.json().then(function (resposta) {
                 jogadores = resposta;
-                tabelaJogadores(nomeTime.substring(nomeTime.indexOf(' ') + 1, nomeTime.length));
+                tabelaJogadores(nomeTime);
                 console.log("Dados recebidos: ", JSON.stringify(resposta));
             });
         } else {
@@ -152,8 +152,28 @@ function tabelaJogadores(time){
             </table>`
             ;
 
+    var contadorLetras = 0;
+    var contadorEspacos = 0;
+    for (let letras = 0; letras < time.length; letras++) {
+        const letraAtual = time[letras];
+        
+        if(letraAtual != ' '){
+            contadorLetras++;
+        }
+        if(letraAtual == ' '){
+            contadorEspacos++;
+        }
+    }
+
     var tabela = document.querySelector('table');
-    tabela.classList.add(`tabela${time}`);
+    var divisao = time.substring(time.indexOf(' ') + 1, time.length);
+    var nomeFinal = divisao.substring(divisao.indexOf(' ') + 1);
+
+    if(contadorEspacos == 1){
+        tabela.classList.add(`tabela${time.substring(time.indexOf(' ') + 1, time.length)}`);
+    } else if(contadorEspacos == 2){
+        tabela.classList.add(`tabela${nomeFinal}`);
+    }
 }
 
 
@@ -215,7 +235,7 @@ function criarGrafico(corP, corS, corT){
         scales:{
             r:{
                 min:80,
-                max:120,
+                max:125,
                 pointLabels:{
                     font:{
                         size: 14,

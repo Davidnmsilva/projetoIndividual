@@ -104,7 +104,7 @@ header img{
     width: 500px;
 }
 
-.botoes button{
+.botoes a{
      width: 200px;
      height: 60px;
      font-size: 24px;
@@ -114,9 +114,13 @@ header img{
      cursor: pointer;
     transition: 0.7s all ease-in-out;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-.botoes button:hover{
+.botoes a:hover{
     box-shadow: inset 0px 0px 7px 4px #83bb1b, 0px 0px 7px 4px #83bb1b;
     text-shadow: 0px 0px 10px #83bb1b;
     color: #83bb1b;
@@ -152,7 +156,7 @@ header img{
     color: #83bb1b;
 }
 
-.historia{
+#historia{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +165,7 @@ header img{
     margin-top: 100px;
 }
 
-.historia h1{
+#historia h1{
     font-size: 34px;
     color: #83bb1b;
     margin-bottom: 30px;
@@ -194,7 +198,7 @@ header img{
     height: 600px;
 }
 
-.time-atual{
+#time-atual{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -258,26 +262,26 @@ header img{
     display: flex;
 }
 
-.tabelaWolves{
-    border: 2px solid rgb(74, 0, 21);
+.tabelaTimberwolves{
+    border: 2px solid rgb(199, 255, 109);
     width: 1000px;
     margin-bottom: 30px;
     background-color: #004b91;
     padding: 2px;
 }
 
-.tabelaWolves tr, td{
-    border: 2px solid rgb(93, 0, 17);
+.tabelaTimberwolves tr, td{
+    border: 2px solid rgb(135, 230, 92);
     padding: 10px;
 }
 
-.tabelaWolves tr{
+.tabelaTimberwolves tr{
     background-color: #7bb0ff;
 }
 
-.tabelaWolves tr:nth-child(1){
+.tabelaTimberwolves tr:nth-child(1){
     background-color: #086fff;
-    color: rgb(145, 0, 0);
+    color: rgb(179, 255, 117);
     font-weight: bold;
     font-size: 18px;
 }

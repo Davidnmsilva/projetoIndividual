@@ -104,19 +104,23 @@ header img{
     width: 500px;
 }
 
-.botoes button{
-     width: 200px;
-     height: 60px;
-     font-size: 24px;
-     background-color: #222;
+.botoes a{
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    background-color: #222;
      border: 2px solid #c91a2a;;
      color: #c91a2a;
-     cursor: pointer;
-    transition: 0.7s all ease-in-out;
-    border-radius: 10px;
+    cursor: pointer;
+   transition: 0.7s all ease-in-out;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
 }
 
-.botoes button:hover{
+.botoes a:hover{
     box-shadow: inset 0px 0px 7px 4px #c91a2a, 0px 0px 7px 4px #c91a2a;
     text-shadow: 0px 0px 10px #f33e4d;
     color: #c91a2a;
@@ -152,7 +156,7 @@ header img{
     color: #c91a2a;
 }
 
-.historia{
+#historia{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +165,7 @@ header img{
     margin-top: 100px;
 }
 
-.historia h1{
+#historia h1{
     font-size: 34px;
     color: #c91a2a;
     margin-bottom: 30px;
@@ -194,7 +198,7 @@ header img{
     height: 600px;
 }
 
-.time-atual{
+#time-atual{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -233,6 +237,7 @@ header img{
     margin: 10px;
     overflow: hidden;
     position: absolute;
+    box-shadow: 0px 0px 7px 3px #ffd781;
 }
 
 .jogador:nth-child(1){
@@ -243,14 +248,15 @@ header img{
     padding-right: 120px;
 }
 .jogador:nth-child(3){
-    padding-left: 80px;
+    padding-left: 0px;
 }
 .jogador:nth-child(4){
     margin-left: 505px;
+    padding-left: 70px;
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
-    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .jogador img{

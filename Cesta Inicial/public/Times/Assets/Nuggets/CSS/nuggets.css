@@ -104,7 +104,7 @@ header img{
     width: 500px;
 }
 
-.botoes button{
+.botoes a{
      width: 200px;
      height: 60px;
      font-size: 24px;
@@ -114,9 +114,13 @@ header img{
      cursor: pointer;
     transition: 0.7s all ease-in-out;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-.botoes button:hover{
+.botoes a:hover{
     box-shadow: inset 0px 0px 7px 4px #FFC700, 0px 0px 7px 4px #FFC700;
     text-shadow: 0px 0px 10px #FFC700;
     color: #FFC700;
@@ -134,13 +138,14 @@ header img{
     height: 220px;
     border: 2px solid #23609a;
     border-radius: 2px;
+    margin-right: 150px;
 }
 
 .time-slogan h2{
     color: #f1f1f1;
     font-size: 36px;
     text-transform: uppercase;
-    margin-left: 150px;
+    margin-left: 200px;
 }
 
 .time-frase img{
@@ -152,7 +157,7 @@ header img{
     color: #23609a;
 }
 
-.historia{
+#historia{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +166,7 @@ header img{
     margin-top: 100px;
 }
 
-.historia h1{
+#historia h1{
     font-size: 34px;
     color: #23609a;
     margin-bottom: 30px;
@@ -194,7 +199,7 @@ header img{
     height: 600px;
 }
 
-.time-atual{
+#time-atual{
     width: 100%;
     display: flex;
     justify-content: center;

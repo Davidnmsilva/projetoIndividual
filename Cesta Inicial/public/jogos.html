@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta Inicial | Jogos</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js"></script>
+    <script src="./js/funcoes.js"></script>
+
+    <link rel="stylesheet" href="./css/jogos.css">
+</head>
+
+<body style="background: #1f1f1f;">
+    <div class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3 "></div>
+    </div>
+    <header>
+        <div class="container">
+            <img src="./Assets/Logos/LogoHeader.png" alt="Logo Site">
+            <div class="lista">
+                <ul>
+                    <li><a href="./indexL.html">Inicio</a></li>
+                    <li><a href="./times.html">Times</a></li>
+                    <li><a href="./login.html">Jogar</a></li>
+                    <li><a href="./dashboard/mural.html">Mural</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="sectionQuizzes">
+        <div class="container">
+            <h1>Quizzes</h1>
+            <div class="cards">
+                <div class="card">
+                    <h2>Conferência Oeste</h2>
+                    <a onclick="irQuiz('Oeste')">Jogar</a>
+                </div>
+                <div class="card">
+                    <h2>Narrações Famosas da NBA</h2>
+                    <a onclick="irQuiz('Narracoes')">Jogar</a>
+                </div>
+                <div class="card">
+                    <h2>Conferência Leste</h2>
+                    <a onclick="irQuiz('Leste')">Jogar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footerLinks"><a href="./cadastro.html">Cadastro</a> | <a href="./login.html">Login</a> | <a
+                    href="#banner">Voltar ao Topo</a></div>
+            <div>
+                2023 © David Nicolas - TODOS OS DIREITOS RESERVADOS
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+
+    function irQuiz(nome){
+        if(nome == 'Oeste'){
+            alerta('warning', 'Redirecionando para o quiz');
+            setTimeout(()=>{
+                window.location = './quizO.html';
+            }, 3000)
+        } else if(nome == 'Leste'){
+            alerta('warning', 'Redirecionando para o quiz');
+            setTimeout(()=>{
+                window.location = './quizL.html';
+            }, 3000)
+        } else{
+            alerta('warning', 'Redirecionando para o quiz');
+            setTimeout(()=>{
+                window.location = './quizN.html';
+            }, 3000)
+        }
+
+    }
+
+    function alerta(icon, title){
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+            })
+
+            Toast.fire({
+            icon: icon,
+            title: title
+            })
+    }
+
+</script>

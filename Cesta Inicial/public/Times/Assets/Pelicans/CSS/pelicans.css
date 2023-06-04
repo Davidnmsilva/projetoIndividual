@@ -54,7 +54,7 @@ header img{
     height: 800px;
     display: flex;
     justify-content: center;
-    background-color: #030201;
+    background-color: #967447;
 }
 
 #sectionBanner .container img{
@@ -82,7 +82,7 @@ header img{
 }
 
 .time-titulo h1{
-    color: #CE1141;
+    color: #85714D;
     font-size: 44px;
 }
 
@@ -110,8 +110,8 @@ header img{
      height: 60px;
      font-size: 24px;
      background-color: #222;
-     border: 2px solid #CE1141;
-     color: #CE1141;
+     border: 2px solid #85714D;
+     color: #85714D;
      cursor: pointer;
     transition: 0.7s all ease-in-out;
     border-radius: 10px;
@@ -122,9 +122,9 @@ header img{
 }
 
 .botoes a:hover{
-    box-shadow: inset 0px 0px 7px 4px #f74b76, 0px 0px 7px 4px #f74b76;
-    text-shadow: 0px 0px 10px #f74b76;
-    color: #f74b76;
+    box-shadow: inset 0px 0px 7px 4px #2fc4df, 0px 0px 7px 4px #2fc4df;
+    text-shadow: 0px 0px 10px #2fc4df;
+    color: #2fc4df;
 }
 
 .time-slogan{
@@ -137,7 +137,7 @@ header img{
 
 .time-slogan video{
     width: 500px;
-    border: 2px solid #CE1141;
+    border: 2px solid #85714D;
     border-radius: 2px;
 }
 
@@ -154,7 +154,7 @@ header img{
 }
 
 .time-frase b{
-    color: #CE1141;
+    color: #85714D;
 }
 
 #historia{
@@ -168,7 +168,7 @@ header img{
 
 #historia h1{
     font-size: 34px;
-    color: #CE1141;
+    color: #85714D;
     margin-bottom: 30px;
 }
 
@@ -191,7 +191,7 @@ header img{
 
 .historia-texto p b{
     font-size: 24px;
-    color: #CE1141;
+    color: #85714D;
     margin-top: 40px;
 }
 
@@ -237,28 +237,27 @@ header img{
     margin: 10px;
     overflow: hidden;
     position: absolute;
-    box-shadow: 0px 0px 7px 3px #e23e67;
+    box-shadow: 0px 0px 7px 3px #685000;
 }
 
 .jogador:nth-child(1){
     margin-right: 1000px;
-    padding-left: 0px;
+    padding-right: 20px;
 }
 .jogador:nth-child(2){
     margin-right: 500px;
-    padding-left: 60px;
+    padding-left: 10px;
 }
 .jogador:nth-child(3){
-    padding-right: 90px;
-    padding-left: 80px;
+    /* padding-right: 90px; */
 }
 .jogador:nth-child(4){
     margin-left: 500px;
-    padding-right: 40px;
+    padding-left: 40px;
 }
 .jogador:nth-child(5){
     margin-left: 1000px;
-    padding-left: 0px;
+    /* padding-right: 40px; */
 }
 
 .jogador img{
@@ -270,26 +269,26 @@ header img{
     display: flex;
 }
 
-.tabelaRaptors{
-    border: 2px solid #030014;
+.tabelaPelicans{
+    border: 2px solid #62530f;
     width: 1000px;
     margin-bottom: 30px;
-    background-color: #CE1141;
+    background-color: #85714D;
     padding: 2px;
 }
 
-.tabelaRaptors tr, td{
-    border: 2px solid #030018;
+.tabelaPelicans tr, td{
+    border: 2px solid #62550f;
     padding: 10px;
 }
 
-.tabelaRaptors tr{
-    background-color: #ff7b98;
+.tabelaPelicans tr{
+    background-color: #d8b77a;
 }
 
-.tabelaRaptors tr:nth-child(1){
-    background-color: #cf002d;
-    color: #620f24;
+.tabelaPelicans tr:nth-child(1){
+    background-color: #344d6c;
+    color: #620f0f;
     font-weight: bold;
     font-size: 18px;
 }

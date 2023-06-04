@@ -104,7 +104,7 @@ header img{
     width: 500px;
 }
 
-.botoes button{
+.botoes a{
      width: 200px;
      height: 60px;
      font-size: 24px;
@@ -114,9 +114,13 @@ header img{
      cursor: pointer;
     transition: 0.7s all ease-in-out;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-.botoes button:hover{
+.botoes a:hover{
     box-shadow: inset 0px 0px 7px 4px #00cb65, 0px 0px 7px 4px #00cb65;
     color: #00cb65;
 }
@@ -151,7 +155,7 @@ header img{
     color: #008342;
 }
 
-.historia{
+#historia{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,7 +164,7 @@ header img{
     margin-top: 100px;
 }
 
-.historia h1{
+#historia h1{
     font-size: 34px;
     color: #008342;
     margin-bottom: 30px;
@@ -189,7 +193,7 @@ header img{
     margin-top: 40px;
 }
 
-.time-atual{
+#time-atual{
     width: 100%;
     display: flex;
     justify-content: center;

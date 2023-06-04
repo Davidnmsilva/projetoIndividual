@@ -42,7 +42,7 @@ FOREIGN KEY (fkTime) REFERENCES nbaTime(idTime)
 CREATE TABLE aviso (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	titulo VARCHAR(100),
-	descricao VARCHAR(150),
+	descricao VARCHAR(400),
 	fkUsuario INT,
 	FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario)
 );

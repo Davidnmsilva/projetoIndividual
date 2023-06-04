@@ -10,7 +10,7 @@
     <title>Times - Suns</title>
 </head>
 
-<body onload="carregarJogadores('Phoenix Suns'), carregarEstatistica('Phoenix Suns', '1D116033', 'E56020', '1D1160')">
+<body onload="carregarJogadores('Phoenix Suns'), carregarEstatistica('Phoenix Suns', 'E5602033', '1D1160', 'E56020')">
 
     <header>
         <div class="container">
@@ -20,6 +20,7 @@
                     <li><a href="./../../indexL.html">Inicio</a></li>
                     <li><a href="./../../times.html">Times</a></li>
                     <li><a href="">Jogos</a></li>
+                    <li><a href="./dashboard/mural.html">Mural</a></li>
                 </ul>
             </div>
         </div>
@@ -38,8 +39,8 @@
                 <div class="time-titulo">
                     <h1>Phoenix Suns</h1>
                     <div class="botoes">
-                        <button>História</button>
-                        <button>Atualmente</button>
+                        <a href="#historia">História</a>
+                        <a href="#time-atual">Atualmente</a>
                     </div>
                 </div>
                 <div class="time-slogan">
@@ -49,7 +50,7 @@
                         <source src="./../Assets/Suns/Imagens e Videos/Suns - Apresentacao.mp4">
                     </video>
                 </div>
-                <div class="historia">
+                <div id="historia">
                     <div class="historia-titulo"><h1>A História do Phoenix Suns</h1></div>
                     <div class="historia-texto">    
                         <p>
@@ -81,7 +82,7 @@
                             <b>Continuação da História</b><br>
                             A história do Phoenix Suns é uma história de perseverança, paixão e determinação. A franquia continua a escrever novos capítulos em sua jornada, com a esperança de conquistar um campeonato da NBA e continuar a ser uma fonte de orgulho para seus fãs leais em Phoenix e além.<br><br>
                         </p>
-                        <div class="time-atual">
+                        <div id="time-atual">
                             <h1>WE ARE PHX!</h1>
                             <p>
                                 Hoje o Suns está em busca do 1° titulo. Será que o time consegue? Veja abaixo o quinteto atual:

@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #11111188;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+}
+
+header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    height: 60px;
+}
+
+.lista ul{
+    display: flex;
+    list-style: none;
+}
+
+.lista ul li a{
+    text-decoration: none;
+    color: #eee;
+    margin-right: 40px;
+}
+
+#sectionBanner{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    background-color: #00183E;
+}
+
+#sectionBanner .container img{
+    height: 800px;
+}
+
+#sectionConteudo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding-top: 50px;
+}
+
+#sectionConteudo .container{
+    justify-content: center;
+}
+
+#sectionConteudo .conteudo{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-titulo h1{
+    color: #F9A01B;
+    font-size: 44px;
+}
+
+.time-logo img{
+    height: 200px;
+}
+
+.time-titulo{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    width: 500px;
+}
+
+.botoes a{
+     width: 200px;
+     height: 60px;
+     font-size: 24px;
+     background-color: #222;
+     border: 2px solid #F9A01B;
+     color: #F9A01B;
+     cursor: pointer;
+    transition: 0.7s all ease-in-out;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.botoes a:hover{
+    box-shadow: inset 0px 0px 7px 4px #ff9b74, 0px 0px 7px 4px #ff9b74;
+    text-shadow: 0px 0px 10px #ff9b74;
+    color: #ff9b74;
+}
+
+.time-slogan{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.time-slogan video{
+    width: 500px;
+    border: 2px solid #F9A01B;
+    border-radius: 2px;
+}
+
+.time-slogan h2{
+    color: #f1f1f1;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 100px;
+}
+
+.time-frase img{
+    margin-left: 165px;
+    margin-bottom: 20px;
+}
+
+.time-frase b{
+    color: #F9A01B;
+}
+
+#historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+}
+
+#historia h1{
+    font-size: 34px;
+    color: #F9A01B;
+    margin-bottom: 30px;
+}
+
+.historia-texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historia-texto p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #d1d1d1;
+    width: 90%;
+    line-height: 26px;
+}
+
+.historia-texto p b{
+    font-size: 24px;
+    color: #F9A01B;
+    margin-top: 40px;
+}
+
+.historia-texto img{
+    height: 600px;
+}
+
+#time-atual{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#sectionTimeAtual{
+    width: 100%;
+    background: url("./../Imagens e Videos/Quadra.jpg");
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogadores{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 330px;
+    position: relative;
+}
+
+.jogador{
+    width: 240px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 7px 3px #b69500;
+}
+
+.jogador:nth-child(1){
+    margin-right: 1000px;
+    padding-left: 20px;
+}
+.jogador:nth-child(2){
+    margin-right: 500px;
+    padding-right: 40px;
+}
+.jogador:nth-child(3){
+    padding-right: 00px;
+}
+.jogador:nth-child(4){
+    margin-left: 500px;
+    padding-right: 40px;
+}
+.jogador:nth-child(5){
+    margin-left: 1000px;
+    padding-right: 10px;
+}
+
+.jogador img{
+    height: 300px;
+    padding-left: 10px;
+}
+
+.lista-config{
+    display: flex;
+}
+
+.tabelaJazz{
+    border: 2px solid #c7ac36;
+    width: 1000px;
+    margin-bottom: 30px;
+    background-color: #F9A01B;
+    padding: 2px;
+}
+
+.tabelaJazz tr, td{
+    border: 2px solid #001e5e;
+    padding: 10px;
+}
+
+.tabelaJazz tr{
+    background-color: #4a9b4e;
+}
+
+.tabelaJazz tr:nth-child(1){
+    background-color: #006416;
+    color: #ffeb35;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.listaLegenda{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.legendaPos{
+    margin-right: 30px;
+    width: 300px;
+    height: 150px;
+    background-color: #111111e6;
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(229, 229, 229);
+}
+
+.legendaTop{
+    height: 175px;
+    background-color: #111111e6;
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(229, 229, 229);
+}
+
+#sectionEstatistica{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.grafico{
+    width: 500px;
+    height: 500px;
+}
+
+.grafico-box{
+    width: 300px;
+    height: 200px;
+}
+
+.texto-estatisticas{
+    color: #898989;
+}
+
+#sectionEstatistica p{
+    text-align: center;
+    color: #7f7f7f;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #8f8f8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    animation: zoom 5s ease-in-out infinite;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}

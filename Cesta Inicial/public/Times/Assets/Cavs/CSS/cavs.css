@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -83,7 +84,6 @@ header img{
 .time-titulo h1{
     color: #81213b;
     font-size: 44px;
-    margin-top: 10px;
 }
 
 .time-logo img{
@@ -105,22 +105,26 @@ header img{
     width: 500px;
 }
 
-.botoes button{
+.botoes a{
      width: 200px;
      height: 60px;
      font-size: 24px;
      background-color: #222;
-     border: 2px solid #81213b;;
-     color:  #81213b;
+     border: 2px solid #81213b;
+     color: #81213b;
      cursor: pointer;
     transition: 0.7s all ease-in-out;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-.botoes button:hover{
-    box-shadow: inset 0px 0px 7px 4px #9e2f4d, 0px 0px 7px 4px #9e2f4d;
-    text-shadow: 0px 0px 10px #9e2f4d;
-    color: #9e2f4d;
+.botoes a:hover{
+    box-shadow: inset 0px 0px 7px 4px #df2f2f, 0px 0px 7px 4px #df2f2f;
+    text-shadow: 0px 0px 10px #df2f2f;
+    color: #df2f2f;
 }
 
 .time-slogan{
@@ -133,13 +137,13 @@ header img{
 
 .time-slogan video{
     width: 500px;
-    border: 2px solid  #81213b;
+    border: 2px solid #81213b;
     border-radius: 2px;
 }
 
 .time-slogan h2{
     color: #f1f1f1;
-    font-size: 36px;
+    font-size: 42px;
     text-transform: uppercase;
     margin-left: 100px;
 }
@@ -150,10 +154,10 @@ header img{
 }
 
 .time-frase b{
-    color:  #81213b;
+    color: #81213b;
 }
 
-.historia{
+#historia{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,9 +166,9 @@ header img{
     margin-top: 100px;
 }
 
-.historia h1{
+#historia h1{
     font-size: 34px;
-    color:  #81213b;
+    color: #81213b;
     margin-bottom: 30px;
 }
 
@@ -187,7 +191,7 @@ header img{
 
 .historia-texto p b{
     font-size: 24px;
-    color:  #81213b;
+    color: #81213b;
     margin-top: 40px;
 }
 
@@ -195,7 +199,7 @@ header img{
     height: 600px;
 }
 
-.time-atual{
+#time-atual{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -207,8 +211,7 @@ header img{
 #sectionTimeAtual{
     width: 100%;
     background: url("./../Imagens e Videos/Quadra.jpg");
-    background-position: center;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,7 +263,7 @@ header img{
     display: flex;
 }
 
-.tabelaCavs{
+.tabelaCavaliers{
     border: 2px solid rgb(66, 0, 28);
     width: 1000px;
     margin-bottom: 30px;
@@ -268,17 +271,17 @@ header img{
     padding: 2px;
 }
 
-.tabelaCavs tr, td{
+.tabelaCavaliers tr, td{
     border: 2px solid rgb(93, 0, 20);
     padding: 10px;
 }
 
-.tabelaCavs tr{
+.tabelaCavaliers tr{
     background-color: #3a3a3a;
     color: #f1a500;
 }
 
-.tabelaCavs tr:nth-child(1){
+.tabelaCavaliers tr:nth-child(1){
     background-color: #42001c;
     color: #e4af00; 
     font-weight: bold;
@@ -318,11 +321,18 @@ header img{
     justify-content: center;
     align-items: center;
     background-color: #222;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .grafico{
     width: 500px;
     height: 500px;
+}
+
+.grafico-box{
+    width: 300px;
+    height: 200px;
 }
 
 .texto-estatisticas{

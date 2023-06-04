@@ -60,7 +60,7 @@ header img{
 }
 
 #sectionTimes{
-    height: 140vh;
+    height: 160vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -114,6 +114,31 @@ header img{
 
 .times-linha img{
     height: 80px;
+}
+
+.times-linha div:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.oeste{
+  text-align: center;
+  color: #c50000;
+  margin-top: 50px;
+}
+
+.oeste div h1{
+  color: #ec7a7a;
+}
+
+.leste{
+  text-align: center;
+  color:#005ce6;
+  margin-top: 50px;
+}
+
+.leste div h1{
+  color: #a3c8ff;
 }
 
 

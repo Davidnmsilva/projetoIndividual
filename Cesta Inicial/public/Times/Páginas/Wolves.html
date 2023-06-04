@@ -10,16 +10,17 @@
     <title>Times - Wolves</title>
 </head>
 
-<body onload="carregarJogadores('Minnesota Timberwolves')">
+<body onload="carregarJogadores('Minnesota Timberwolves'), carregarEstatistica('Minnesota Timberwolves', '00508633', '83bb1b', '005086')">
 
     <header>
         <div class="container">
             <img src="./../../Assets/Logos/LogoHeader.png" alt="Logo Site">
             <div class="lista">
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Times</a></li>
+                    <li><a href="./../../indexL.html">Inicio</a></li>
+                    <li><a href="./../../times.html">Times</a></li>
                     <li><a href="">Jogos</a></li>
+                    <li><a href="./dashboard/mural.html">Mural</a></li>
                 </ul>
             </div>
         </div>
@@ -38,8 +39,8 @@
                 <div class="time-titulo">
                     <h1>Minnesota Timberwolves</h1>
                     <div class="botoes">
-                        <button>História</button>
-                        <button>Atualmente</button>
+                        <a href="#historia">História</a>
+                        <a href="#time-atual">Atualmente</a>
                     </div>
                 </div>
                 <div class="time-slogan">
@@ -49,7 +50,7 @@
                         <source src="./../Assets/Wolves/Imagens e Videos/Wolves - Apresentacao.mp4">
                     </video>
                 </div>
-                <div class="historia">
+                <div id="historia">
                     <div class="historia-titulo"><h1>A História do Minnesota Timberwolves</h1></div>
                     <div class="historia-texto">    
                         <p>
@@ -83,7 +84,7 @@
                             <b>Continuação da História</b><br>
                             A história do Minnesota Timberwolves é uma jornada de altos e baixos, mas também de perseverança e esperança. A franquia continua a construir seu futuro, escrevendo novos capítulos em sua busca pelo sucesso na NBA e mantendo o orgulho e o apoio de seus apaixonados fãs em Minnesota e além.<br><br>
                         </p>
-                        <div class="time-atual">
+                        <div id="time-atual">
                             <h1>RAISED BY WOLVES!</h1>
                             <p>
                                 Hoje o Timberwolves está em busca do 1° titulo. Será que o time consegue? Veja abaixo o quinteto:

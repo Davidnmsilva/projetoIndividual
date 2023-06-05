@@ -98,6 +98,17 @@ header img{
     transition: all 0.5s;
 }
 
+.card:nth-child(1):hover b,
+.card:nth-child(3):hover b{
+    color: orange;
+    transition: all 0.3s;
+}
+
+.card:nth-child(2):hover b{
+    color: red;
+    transition: all 0.3s;
+}
+
 .card:nth-child(1){
     background: url('./../Assets/Oeste.webp');
     background-size: 400px;
@@ -137,9 +148,14 @@ header img{
     font-weight: bold;
     color: black;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     margin-top: 10px;
     cursor: pointer;
+}
+
+.card h3{
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .card:nth-child(1) a:hover{

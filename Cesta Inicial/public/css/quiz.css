@@ -104,7 +104,10 @@ body{
 .azul .btnVoltar button{
     color: #0366AC;
 }
-.branco,
+
+.branco{
+    background: url('./../Assets/Wallpaper.jpg');
+}
 .branco #next-btn{
     background: #636363;
 }

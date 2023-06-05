@@ -1,92 +1,92 @@
 const questions = [
     {
-        question: 'Qual é este momento?',
+        question: 'Qual o único time que conquistou 11 campeonatos em 13 anos?',
         answers: [
-            { text: "Jeremy Lin game winner, contra o Knicks", correct: false },
-            { text: "Jeremy Lin game winner, contra o Raptors", correct: true },
-            { text: "Carmelo Anthony game winner, contra o Knicks", correct: false },
-            { text: "Carmelo Anthony game winner, contra o Raptors", correct: false }
+            { text: "Golden State Warriors", correct: false },
+            { text: "Los Angeles Lakers", correct: false },
+            { text: "Boston Celtics", correct: true },
+            { text: "Chicago Bulls", correct: false }
         ]
     },
     {
-        question: 'Qual é este momento?',
+        question: 'Quais os times que Kareem Abdul Jabbar jogou?',
         answers: [
-            { text: "Ray Allen game winner, contra o Heat", correct: false },
-            { text: "Paul Pierce game winner, contra o Celtics", correct: false },
-            { text: "Ray Allen game winner, contra o Bulls", correct: true },
-            { text: "Paul Pierce game winner, contra o Heat", correct: false }
+            { text: "Los Angeles Lakers e Milwaukee Bucks", correct: true },
+            { text: "Los Angeles Lakers e Miami Heat", correct: false },
+            { text: "Milwaukee Bucks e Boston Celtics", correct: false },
+            { text: "Boston Celtics e Miami Heat", correct: false }
         ]
     },
     {
-        question: 'Qual é este momento?',
+        question: 'Qual o time conhecido como THE PROCESS?',
         answers: [
-            { text: "Lebron James bloqueando Iguodala, contra o Warriors.", correct: true },
-            { text: "Lebron James bloqueando Iguodala, contra o Cavs.", correct: false },
-            { text: "Iguodala bloqueando Lebron James, contra o Cavs.", correct: false },
-            { text: "Lebron James bloqueando Curry, contra o Warriors.", correct: false }
+            { text: "Washington Wizards", correct: false },
+            { text: "Atlanta Hawks", correct: false },
+            { text: "Indiana Pacers", correct: false },
+            { text: "Philadelphia 76ers", correct: true }
         ]
     },
     {
-        question: 'Qual é este momento?',
+        question: 'Qual o time que a cultura é tão forte que é conhecido como THE CULTURE?',
         answers: [
-            { text: "Derrick Rose enterrada em cima de Nash, contra o Suns", correct: false },
-            { text: "Goran Dragic enterrada em cima de Nash, contra o Bulls", correct: false },
-            { text: "Steve Nash enterrada em cima de Rose", correct: false },
-            { text: "Derrick Rose enterrada em cima de Dragic, contra o Suns", correct: true }
+            { text: "New York Knicks", correct: false },
+            { text: "Toronto Raptors", correct: false },
+            { text: "Miami Heat", correct: true },
+            { text: "Brooklyn Nets", correct: false }
         ]
     },
     {
-        question: 'Qual é este momento?<b',
+        question: 'Qual o time mais valioso da liga, em doláres?<b',
         answers: [
-            { text: "DeAndre Jordan enterrada contra o Clippers", correct: false },
-            { text: "DeAndre Jordan enterrada contra o Mavericks", correct: false },
-            { text: "DeAndre Jordan enterrada contra o Celtics", correct: false },
-            { text: "DeAndre Jordan enterrada contra o Pistons", correct: true }
+            { text: "Golden State Warriors", correct: false },
+            { text: "New York Knicks", correct: true },
+            { text: "Los Angeles Lakers", correct: false },
+            { text: "Brooklyn Nets", correct: false }
         ]
     },
     {
-        question: 'Qual é este momento?<b',
+        question: 'Qual o único time que conseguiu o famoso 3-Peat (Vencer o titulo da NBA por 3 temporadas consecutivas) duas vezes?<b',
         answers: [
-            { text: "Carmelo Anthony empata o jogo contra o Bulls", correct: true },
-            { text: "Carmelo Anthony vence o jogo contra o Bulls", correct: false },
-            { text: "Carmelo Anthony vence o jogo contra o Pacers", correct: false },
-            { text: "Carmelo Anthony empata o jogo contra o Pacers", correct: false }
+            { text: "Chicago Bulls", correct: true },
+            { text: "Milwaukee Bucks", correct: false },
+            { text: "Boston Celtics", correct: false },
+            { text: "Los Angeles Lakes", correct: false }
         ]
     },
     {
-        question: 'Qual é este momento?',
+        question: 'Qual o único time que virou um 3 - 1 nas finais?',
         answers: [
-            { text: "Curry game winner contra o Cavs", correct: false },
-            { text: "Curry game winner contra o Wizards", correct: false },
-            { text: "Curry game winner contra o Thunder", correct: true },
-            { text: "Curry game winner contra o Blazers", correct: false }
+            { text: "Chicago Bulls", correct: false },
+            { text: "Washington Wizards", correct: false },
+            { text: "Cleveland Cavaliers", correct: true },
+            { text: "Orlando Magic", correct: false }
         ]
     },
     {
-        question: 'Qual é este momento?',
+        question: 'Qual o time que Dwight Howards jogou no seu auge?',
         answers: [
-            { text: "Ray Allen salva o Boston Celtics empatando o jogo", correct: false },
-            { text: "Ray Allen salva o Miami Heat empatando o jogo.", correct: true },
-            { text: "Ray Allen salva o Miami Heat ganhando o jogo", correct: false },
-            { text: "Ray Allen salva o Boston Celtics ganhando o jogo", correct: false }
+            { text: "Orlando Magic", correct: true },
+            { text: "Atlanta Hawks", correct: false },
+            { text: "Houston Rockets", correct: false },
+            { text: "Los Angeles Lakers", correct: false }
         ]
     },
     {
-        question: 'Qual é este momento?',
+        question: 'Qual o time que joga na Arena Capital One?',
         answers: [
-            { text: "Blake Griffin enterrada contra o Thunder", correct: true },
-            { text: "Blake Griffin enterrada contra o Mavericks", correct: false },
-            { text: "Blake Griffin enterrada contra o Celtics", correct: false },
-            { text: "Blake Griffin enterrada contra o Clippers", correct: false }
+            { text: "Detroit Pistons", correct: false },
+            { text: "Charlotte Hornets", correct: false },
+            { text: "Golden State Warriors", correct: false },
+            { text: "Washington Wizards", correct: true }
         ]
     },
     {
-        question: 'Qual é este momento?',
+        question: 'Qual o time que já foi conhecido como os Bad Boys?',
         answers: [
-            { text: "Kawhi Leonard empata o jogo para o Raptors", correct: false },
-            { text: "Kawhi Leonard vence o jogo para o Spurs", correct: false },
-            { text: "Kawhi Leonard empata o jogo para o Spurs", correct: false },
-            { text: "Kawhi Leonard vence o jogo para o Raptors", correct: true }
+            { text: "Boston Celtics", correct: false },
+            { text: "Detroit Pistons", correct: true },
+            { text: "Indiana Pacers", correct: false },
+            { text: "Cleveland Cavalies", correct: false }
         ]
     }
 ];
@@ -94,9 +94,6 @@ const questions = [
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-const videoContainer = document.getElementById("video-container");
-const videoSource = document.getElementById("video-source");
-const videoId = document.getElementById("video");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -142,9 +139,6 @@ function selectAnswer(e) {
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
-        if(sessionStorage.telaLeste == 'Leste'){
-            
-        }
     } else {
         selectedBtn.classList.add("incorrect");
     }
@@ -175,12 +169,8 @@ function showScore() {
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
-        videoId.pause();
-        videoContainer.style.display = "none";
         showQuestion();
     } else {
-        videoId.pause();
-        videoContainer.style.display = "none";
         showScore();
     }
 }

@@ -1,73 +1,66 @@
 const questions = [
     {
-        question: 'Qual é este momento?<br><audio controls><source src="./Assets/Audios/Audio Jeremy Lin.wav" type="audio/wav"></audio>',
+        question: 'Qual foi o time que mais conquistou titulos nos ultimos 10 anos?',
         answers: [
-            { text: "Jeremy Lin game winner, contra o Knicks", correct: false },
-            { text: "Jeremy Lin game winner, contra o Raptors", correct: true },
-            { text: "Carmelo Anthony game winner, contra o Knicks", correct: false },
-            { text: "Carmelo Anthony game winner, contra o Raptors", correct: false }
-        ],
-        video: './Assets/Videos/Jeremy Lin - Contra o Raptors.mp4'
+            { text: "Golden State Warriors", correct: true },
+            { text: "Los Angeles Lakers", correct: false },
+            { text: "Cleveland Cavaliers", correct: false },
+            { text: "Miami Heat", correct: false }
+        ]
     },
     {
-        question: 'Qual é este momento?<br><audio controls><source src="./Assets/Audios/Audio Ray Allen.wav" type="audio/wav"></audio>',
+        question: 'Qual o time que tinha o trio conhecido como "Run TMC"',
         answers: [
-            { text: "Ray Allen game winner, contra o Heat", correct: false },
-            { text: "Paul Pierce game winner, contra o Celtics", correct: false },
-            { text: "Ray Allen game winner, contra o Bulls", correct: true },
-            { text: "Paul Pierce game winner, contra o Heat", correct: false }
-        ],
-        video: './Assets/Videos/Ray Allen - Contra o Bulls.mp4'
+            { text: "Minnesotta Timberwolves", correct: false },
+            { text: "Oklahoma City Thunder", correct: false },
+            { text: "Portland Trail Blazers", correct: false },
+            { text: "Sacramento Kings", correct: true }
+        ]
     },
     {
-        question: 'Qual é este momento?<br><audio controls><source src="./Assets/Audios/Audio Block By James.wav" type="audio/wav"></audio>',
+        question: 'O jogador Alex English, jogou em qual time?',
         answers: [
-            { text: "Lebron James bloqueando Iguodala, contra o Warriors.", correct: true },
-            { text: "Lebron James bloqueando Iguodala, contra o Cavs.", correct: false },
-            { text: "Iguodala bloqueando Lebron James, contra o Cavs.", correct: false },
-            { text: "Lebron James bloqueando Curry, contra o Warriors.", correct: false }
-        ],
-        video: './Assets/Videos/Block By James.mp4'
+            { text: "Houston Rockets", correct: false },
+            { text: "Denver Nuggets", correct: true },
+            { text: "Memphis Grizzlies", correct: false },
+            { text: "Phoenix Suns", correct: false }
+        ]
     },
     {
-        question: 'Qual é este momento?<br><audio controls><source src="./Assets/Audios/Audio Drose.wav" type="audio/wav"></audio>',
+        question: 'Qual o último ano que o Phoenix Suns foi para as finais?',
         answers: [
-            { text: "Derrick Rose enterrada em cima de Nash, contra o Suns", correct: false },
-            { text: "Goran Dragic enterrada em cima de Nash, contra o Bulls", correct: false },
-            { text: "Steve Nash enterrada em cima de Rose", correct: false },
-            { text: "Derrick Rose enterrada em cima de Dragic, contra o Suns", correct: true }
-        ],
-        video: './Assets/Videos/DRose.mp4'
+            { text: "2020", correct: false },
+            { text: "2018", correct: false },
+            { text: "2021", correct: true },
+            { text: "2015", correct: false }
+        ]
     },
     {
-        question: 'Qual é este momento?<br><audio controls><source src="./Assets/Audios/Audio Deandre.wav" type="audio/wav"></audio>',
+        question: 'Quem é o jovem promissor que lidera o Memphis Grizzlies?',
         answers: [
-            { text: "DeAndre Jordan enterrada contra o Clippers", correct: false },
-            { text: "DeAndre Jordan enterrada contra o Mavericks", correct: false },
-            { text: "DeAndre Jordan enterrada contra o Celtics", correct: false },
-            { text: "DeAndre Jordan enterrada contra o Pistons", correct: true }
-        ],
-        video: './Assets/Videos/Deandre.mp4'
+            { text: "Ja Morant", correct: true },
+            { text: "Luka Doncic", correct: false },
+            { text: "Jayson Tatum", correct: false },
+            { text: "Zion Williamson", correct: false }
+        ]
     },
     {
-        question: 'Qual é este momento?<br><audio controls><source src="./Assets/Audios/Audio Carmelo.wav" type="audio/wav"></audio>',
+        question: 'Qual o time que venceu seu único titulo em 1977?',
         answers: [
-            { text: "Carmelo Anthony empata o jogo contra o Bulls", correct: true },
-            { text: "Carmelo Anthony vence o jogo contra o Bulls", correct: false },
-            { text: "Carmelo Anthony vence o jogo contra o Pacers", correct: false },
-            { text: "Carmelo Anthony empata o jogo contra o Pacers", correct: false }
-        ],
-        video: './Assets/Videos/Carmelo.mp4'
+            { text: "New Orleans Pelicans", correct: false },
+            { text: "Utah Jazz", correct: false },
+            { text: "Portland Trail Blazers", correct: true },
+            { text: "San Antonio Spurs", correct: false }
+        ]
     },
     {
-        question: 'Qual é este momento?<br><audio controls><source src="./Assets/Audios/Audio Curry.wav" type="audio/wav"></audio>',
+        question: 'Qual o time que uniu os fãs após o desastre do furacão Katrina?',
         answers: [
-            { text: "Curry game winner contra o Cavs", correct: false },
-            { text: "Curry game winner contra o Wizards", correct: false },
-            { text: "Curry game winner contra o Thunder", correct: true },
-            { text: "Curry game winner contra o Blazers", correct: false }
-        ],
-        video: './Assets/Videos/Curry BANG.mp4'
+            { text: "New Orleans Pelicans", correct: true },
+            { text: "Washington Wizards", correct: false },
+            { text: "Oklahoma City Thunder", correct: false },
+            { text: "Portland Trail Blazers", correct: false }
+        ]
     },
     {
         question: 'Qual é este momento?<br><audio controls><source src="./Assets/Audios/Audio Miami.wav" type="audio/wav"></audio>',
@@ -76,37 +69,31 @@ const questions = [
             { text: "Ray Allen salva o Miami Heat empatando o jogo.", correct: true },
             { text: "Ray Allen salva o Miami Heat ganhando o jogo", correct: false },
             { text: "Ray Allen salva o Boston Celtics ganhando o jogo", correct: false }
-        ],
-        video: './Assets/Videos/Ray Allen.mp4'
+        ]
     },
     {
-        question: 'Qual é este momento?<br><audio controls><source src="./Assets/Audios/Audio Blake.wav" type="audio/wav"></audio>',
+        question: 'Qual a estrela do Dallas Mavericks atualmente?',
         answers: [
-            { text: "Blake Griffin enterrada contra o Thunder", correct: true },
-            { text: "Blake Griffin enterrada contra o Mavericks", correct: false },
-            { text: "Blake Griffin enterrada contra o Celtics", correct: false },
-            { text: "Blake Griffin enterrada contra o Clippers", correct: false }
-        ],
-        video: './Assets/Videos/Blake.mp4'
+            { text: "Shai Gilgeous-Alexander", correct: false },
+            { text: "Ja Morant", correct: false },
+            { text: "Luka Dončić", correct: true },
+            { text: "Lauri Markannen", correct: false }
+        ]
     },
     {
-        question: 'Qual é este momento?<br><audio controls><source src="./Assets/Audios/Audio Kawhi.wav" type="audio/wav"></audio>',
+        question: 'Quem é o time de Los Angeles que não tem titulos',
         answers: [
-            { text: "Kawhi Leonard empata o jogo para o Raptors", correct: false },
-            { text: "Kawhi Leonard vence o jogo para o Spurs", correct: false },
-            { text: "Kawhi Leonard empata o jogo para o Spurs", correct: false },
-            { text: "Kawhi Leonard vence o jogo para o Raptors", correct: true }
-        ],
-        video: './Assets/Videos/Kawhi.mp4'
+            { text: "Los Angeles Blazers", correct: false },
+            { text: "Los Angeles Lakers", correct: false },
+            { text: "Los Angeles Mavericks", correct: false },
+            { text: "Los Angeles Clippers", correct: true }
+        ]
     }
 ];
 
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-const videoContainer = document.getElementById("video-container");
-const videoSource = document.getElementById("video-source");
-const videoId = document.getElementById("video");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -152,12 +139,6 @@ function selectAnswer(e) {
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
-        if(sessionStorage.telaNarracao == 'Narrações'){
-            videoContainer.style.display = 'block';
-            var videoAtual = questions[currentQuestionIndex].video;
-            videoId.setAttribute("src", videoAtual);
-            videoId.volume = 0.25;
-        }
     } else {
         selectedBtn.classList.add("incorrect");
     }
@@ -188,12 +169,8 @@ function showScore() {
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
-        videoId.pause();
-        videoContainer.style.display = "none";
         showQuestion();
     } else {
-        videoId.pause();
-        videoContainer.style.display = "none";
         showScore();
     }
 }

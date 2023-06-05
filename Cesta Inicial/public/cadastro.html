@@ -1,3 +1,4 @@
+Copy code
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cesta Inicial! - Conheça a NBA!</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="Assets/Cadastro/css/style.css">
 </head>
 
@@ -18,81 +21,138 @@
                 <input type="text" id="nome_input" placeholder="Nome:">
                 <input type="email" id="email_input" placeholder="E-mail:">
                 <input type="email" id="confirmarE_input" placeholder="Confirmar E-mail:">
-                <input type="text" id="senha_input" placeholder="Senha:">
-                <input type="text" id="confirmarS_input" placeholder="Confirmar Senha:">
+                <input type="password" id="senha_input" placeholder="Senha:">
+                <input type="password" id="confirmarS_input" placeholder="Confirmar Senha:">
             </div>
-            <button onclick="cadastrar()">Cadastre-se</button>
+            <div id="mensagensErro"></div>
+            <button onclick="validarCadastro()">Cadastre-se</button>
             <h4>Já está cadastrado? Faça login clicando <a href="./login.html">aqui</a>.</h4>
         </div>
     </section>
-</body>
 
-</html>
+    <script>
+        function validarCadastro() {
+            var nome = document.getElementById('nome_input').value;
+            var email = document.getElementById('email_input').value;
+            var confirmarEmail = document.getElementById('confirmarE_input').value;
+            var senha = document.getElementById('senha_input').value;
+            var confirmarSenha = document.getElementById('confirmarS_input').value;
+            var erros = [];
 
-<script>
-    function cadastrar() {
-        // aguardar();
+            // Verificar se o nome está preenchido
+            if (!nome) {
+                erros.push("O campo nome é obrigatório.");
+            }
 
-        //Recupere o valor da nova input pelo nome do id
-        // Agora vá para o método fetch logo abaixo
-        var nomeVar = nome_input.value;
-        var emailVar = email_input.value;
-        var confirmarE = confirmarE_input.value;
-        var senhaVar = senha_input.value;
-        var confirmacaoSenhaVar = confirmarS_input.value;
+            // Verificar se o email está preenchido e contém o símbolo '@'
+            if (!email) {
+                erros.push("O campo email é obrigatório.");
+            } else if (email.indexOf('@') === -1) {
+                erros.push("O email deve conter o símbolo '@'.");
+            }
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || confirmarE == "") {
-            // cardErro.style.display = "block"
-            // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            // Verificar se o email de confirmação está preenchido e é igual ao email
+            if (!confirmarEmail) {
+                erros.push("O campo confirmar email é obrigatório.");
+            } else if (email !== confirmarEmail) {
+                erros.push("O email de confirmação não coincide com o email fornecido.");
+            }
 
-            // finalizarAguardar();
+            // Verificar se a senha está preenchida e atende aos critérios
+            if (!senha) {
+                erros.push("O campo senha é obrigatório.");
+            } else if (senha.length < 6) {
+                erros.push("A senha deve conter pelo menos 6 caracteres.");
+            } else if (!senha.match(/\d/)) {
+                erros.push("A senha deve conter pelo menos um número.");
+            } else if (!senha.match(/[A-Z]/)) {
+                erros.push("A senha deve conter pelo menos uma letra maiúscula.");
+            } else if (!senha.match(/[!@#$%^&*()-_+=~`[\]{}|;:,.<>?]/)) {
+                erros.push("A senha deve conter pelo menos um caractere especial.");
+            }
+
+            // Verificar se a senha de confirmação está preenchida e é igual à senha
+            if (!confirmarSenha) {
+                erros.push("O campo confirmar senha é obrigatório.");
+            } else if (senha !== confirmarSenha) {
+                erros.push("A senha de confirmação não coincide com a senha fornecida.");
+            }
+
+            // Exibir os erros ou chamar a função cadastrar()
+            if (erros.length > 0) {
+                var errosHtml = "";
+                for (var i = 0; i < erros.length; i++) {
+                    errosHtml += "<li>" + erros[i] + "</li>";
+                }
+                document.getElementById('mensagensErro').innerHTML = "<ul>" + errosHtml + "</ul>";
+            } else {
+                cadastrar();
+            }
+        }
+
+        function cadastrar() {
+            var nomeVar = nome_input.value;
+            var emailVar = email_input.value;
+            var confirmarE = confirmarE_input.value;
+            var senhaVar = senha_input.value;
+            var confirmacaoSenhaVar = confirmarS_input.value;
+
+            fetch("/usuarios/cadastrar", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    // crie um atributo que recebe o valor recuperado aqui
+                    // Agora vá para o arquivo routes/usuario.js
+                    nomeServer: nomeVar,
+                    emailServer: emailVar,
+                    senhaServer: senhaVar
+                })
+            }).then(function (resposta) {
+
+                console.log("resposta: ", resposta);
+
+                if (resposta.ok) {
+                    criarAlerta('success', 'Cadastro realizado! Redirecionando para tela de login.')
+                    setTimeout(() => {
+                        window.location = "login.html";
+                    }, "2000")
+
+                    // limparFormulario();
+                    // finalizarAguardar();
+                } else {
+                    throw ("Houve um erro ao tentar realizar o cadastro!");
+                }
+            }).catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+                // finalizarAguardar();
+            });
+
             return false;
         }
-        // else {
-        //     setInterval(sumirMensagem, 5000)
-        // }
 
-        // Enviando o valor da nova input
-        fetch("/usuarios/cadastrar", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                // crie um atributo que recebe o valor recuperado aqui
-                // Agora vá para o arquivo routes/usuario.js
-                nomeServer: nomeVar,
-                emailServer: emailVar,
-                senhaServer: senhaVar
-            })
-        }).then(function (resposta) {
-
-            console.log("resposta: ", resposta);
-
-            if (resposta.ok) {
-                // cardErro.style.display = "block";
-
-                // mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-
-                setTimeout(() => {
-                    window.location = "login.html";
-                }, "2000")
-
-                // limparFormulario();
-                // finalizarAguardar();
-            } else {
-                throw ("Houve um erro ao tentar realizar o cadastro!");
+        function criarAlerta(icon, title){
+            const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
             }
-        }).catch(function (resposta) {
-            console.log(`#ERRO: ${resposta}`);
-            // finalizarAguardar();
-        });
+            })
 
-        return false;
-    }
+            Toast.fire({
+            icon: icon,
+            title: title
+            })
+        }
 
     // function sumirMensagem() {
     //     cardErro.style.display = "none"
     // }
 
-</script>
+    </script>

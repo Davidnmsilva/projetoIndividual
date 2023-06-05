@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cesta Inicial! - Logue agora!</title>
     <link rel="stylesheet" href="Assets/Login/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js"></script>
 </head>
 
 <body>
@@ -39,16 +41,6 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
 
-        if (emailVar == "" || senhaVar == "") {
-            // cardErro.style.display = "block"
-            // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            // finalizarAguardar();
-            return false;
-        }
-        // else {
-        //     setInterval(sumirMensagem, 5000)
-        // }
-
         fetch("/usuarios/autenticar", {
             method: "POST",
             headers: {
@@ -62,6 +54,7 @@
             console.log("ESTOU NO THEN DO entrar()!")
 
             if (resposta.ok) {
+                criarAlerta('success', 'Cadastro realizado! Redirecionando para tela de login.')
                 console.log(resposta);
 
                 resposta.json().then(json => {
@@ -80,6 +73,9 @@
 
             } else {
 
+                criarAlerta('error', 'Erro ao tentar fazer login, tente novamente.')
+                
+
                 console.log("Houve um erro ao tentar realizar o login!");
 
                 resposta.text().then(texto => {
@@ -94,6 +90,25 @@
 
         return false;
     }
+
+    function criarAlerta(icon, title){
+            const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+            })
+
+            Toast.fire({
+            icon: icon,
+            title: title
+            })
+        }
 
     // function sumirMensagem() {
     //     cardErro.style.display = "none"

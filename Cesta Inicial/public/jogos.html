@@ -26,7 +26,7 @@
                 <ul>
                     <li><a href="./indexL.html">Inicio</a></li>
                     <li><a href="./times.html">Times</a></li>
-                    <li><a href="./login.html">Jogar</a></li>
+                    <li><a href="">Jogos</a></li>
                     <li><a href="./dashboard/mural.html">Mural</a></li>
                 </ul>
             </div>
@@ -58,8 +58,8 @@
 
     <footer>
         <div class="container">
-            <div class="footerLinks"><a href="./cadastro.html">Cadastro</a> | <a href="./login.html">Login</a> | <a
-                    href="#banner">Voltar ao Topo</a></div>
+            <div class="footerLinks">
+                <a href="./indexL.html">Página Inicial</a></div>
             <div>
                 2023 © David Nicolas - TODOS OS DIREITOS RESERVADOS
             </div>
@@ -75,17 +75,17 @@
             alerta('warning', 'Redirecionando para o quiz');
             setTimeout(()=>{
                 window.location = './quizO.html';
-            }, 3000)
+            }, 2000)
         } else if(nome == 'Leste'){
             alerta('warning', 'Redirecionando para o quiz');
             setTimeout(()=>{
                 window.location = './quizL.html';
-            }, 3000)
+            }, 2000)
         } else{
             alerta('warning', 'Redirecionando para o quiz');
             setTimeout(()=>{
                 window.location = './quizN.html';
-            }, 3000)
+            }, 2000)
         }
 
     }
@@ -95,7 +95,7 @@
             toast: true,
             position: 'top-end',
             showConfirmButton: false,
-            timer: 3000,
+            timer: 2000,
             timerProgressBar: true,
             didOpen: (toast) => {
                 toast.addEventListener('mouseenter', Swal.stopTimer)

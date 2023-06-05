@@ -342,3 +342,15 @@ input {
 .simulador .container {
   flex-direction: column
 }
+
+#mensagensErro ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mensagensErro ul li{
+  color: white;
+}
+

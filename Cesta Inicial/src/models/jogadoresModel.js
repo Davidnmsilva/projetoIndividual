@@ -11,7 +11,7 @@ function listar() {
 
 function listarPorTime(nome){
     var instrucao = `
-        SELECT j.* FROM jogador AS j JOIN nbaTime AS nba ON j.fkTime = nba.idTime WHERE nba.nome = '${nome}';
+        SELECT j.nome, j.posicao, e.pontos, e.assistencias, e.rebotes, e.roubadas, e.tocos, e.turnovers, e.faltas FROM jogador j JOIN estatisticas e ON j.fkEstatistica = e.idEstatistica JOIN nbaTime n ON j.fkTime = n.idTime WHERE n.nome = '${nome}';
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);

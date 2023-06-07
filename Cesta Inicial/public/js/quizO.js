@@ -63,12 +63,12 @@ const questions = [
         ]
     },
     {
-        question: 'Qual é este momento?<br><audio controls><source src="./Assets/Audios/Audio Miami.wav" type="audio/wav"></audio>',
+        question: 'Hakeem Olajuwon ganhou seu titulo por qual time?',
         answers: [
-            { text: "Ray Allen salva o Boston Celtics empatando o jogo", correct: false },
-            { text: "Ray Allen salva o Miami Heat empatando o jogo.", correct: true },
-            { text: "Ray Allen salva o Miami Heat ganhando o jogo", correct: false },
-            { text: "Ray Allen salva o Boston Celtics ganhando o jogo", correct: false }
+            { text: "Dallas Mavericks", correct: false },
+            { text: "Houston Rockets", correct: true },
+            { text: "San Antonio Spurs", correct: false },
+            { text: "Oklahoma City Thunder", correct: false }
         ]
     },
     {

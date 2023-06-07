@@ -25,93 +25,102 @@
                 <input type="email" id="email_input" placeholder="E-mail:">
                 <input type="password" id="senha_input" placeholder="Senha:">
             </div>
-            <button onclick="entrar()">Login</button>
+            <button onclick="validarLogin()">Login</button>
+            <div id="mensagensErroLogin" style="display:none; color:white;"></div>
             <h4>Não tem um login? Faça o cadastro clicando <a href="./cadastro.html">aqui</a>.</h4>
         </div>
     </section>
-</body>
-</html>
 
-<script>
+    <script>
+        function validarLogin() {
+            var email = document.getElementById('email_input').value;
+            var senha = document.getElementById('senha_input').value;
+            var erros = [];
 
+            // Verificar se o email está preenchido e contém o símbolo '@'
+            if (!email) {
+                erros.push("O campo email é obrigatório.");
+            } else if (email.indexOf('@') === -1) {
+                erros.push("O email deve conter o símbolo '@'.");
+            }
 
-    function entrar() {
-        // aguardar();
+            // Verificar se a senha está preenchida
+            if (!senha) {
+                erros.push("O campo senha é obrigatório.");
+            }
 
-        var emailVar = email_input.value;
-        var senhaVar = senha_input.value;
-
-        fetch("/usuarios/autenticar", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                emailServer: emailVar,
-                senhaServer: senhaVar
-            })
-        }).then(function (resposta) {
-            console.log("ESTOU NO THEN DO entrar()!")
-
-            if (resposta.ok) {
-                criarAlerta('success', 'Cadastro realizado! Redirecionando para tela de login.')
-                console.log(resposta);
-
-                resposta.json().then(json => {
-                    console.log(json);
-                    console.log(JSON.stringify(json));
-
-                    sessionStorage.EMAIL_USUARIO = json.email;
-                    sessionStorage.NOME_USUARIO = json.nome;
-                    sessionStorage.ID_USUARIO = json.idUsuario;
-
-                    setTimeout(function () {
-                        window.location = "./indexL.html";
-                    }, 1000); // apenas para exibir o loading
-
-                });
-
+            // Exibir os erros ou chamar a função de login
+            if (erros.length > 0) {
+                var errosHtml = "";
+                for (var i = 0; i < erros.length; i++) {
+                    errosHtml += "<li>" + erros[i] + "</li>";
+                }
+                document.getElementById('mensagensErroLogin').style.display = "block";
+                document.getElementById('mensagensErroLogin').innerHTML = "<ul>" + errosHtml + "</ul>";
             } else {
-
-                criarAlerta('error', 'Erro ao tentar fazer login, tente novamente.')
-                
-
-                console.log("Houve um erro ao tentar realizar o login!");
-
-                resposta.text().then(texto => {
-                    console.error(texto);
-                    // finalizarAguardar(texto);
-                });
+                fazerLogin(email, senha);
             }
-
-        }).catch(function (erro) {
-            console.log(erro);
-        })
-
-        return false;
-    }
-
-    function criarAlerta(icon, title){
-            const Toast = Swal.mixin({
-            toast: true,
-            position: 'top-end',
-            showConfirmButton: false,
-            timer: 2000,
-            timerProgressBar: true,
-            didOpen: (toast) => {
-                toast.addEventListener('mouseenter', Swal.stopTimer)
-                toast.addEventListener('mouseleave', Swal.resumeTimer)
-            }
-            })
-
-            Toast.fire({
-            icon: icon,
-            title: title
-            })
         }
 
-    // function sumirMensagem() {
-    //     cardErro.style.display = "none"
-    // }
+        function fazerLogin(email, senha) {
+            fetch("/usuarios/autenticar", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    emailServer: email,
+                    senhaServer: senha
+                })
+            })
+                .then(function (resposta) {
+                    if (resposta.ok) {
+                        criarAlerta('success', 'Login realizado! Redirecionando para tela principal.');
 
-</script>
+                        resposta.json().then(json => {
+                            sessionStorage.EMAIL_USUARIO = json.email;
+                            sessionStorage.NOME_USUARIO = json.nome;
+                            sessionStorage.ID_USUARIO = json.idUsuario;
+
+                            setTimeout(function () {
+                                window.location = "./indexL.html";
+                            }, 1000); // apenas para exibir o loading
+                        });
+
+                    } else {
+                        criarAlerta('error', 'Erro ao tentar fazer login, tente novamente.');
+
+                        resposta.text().then(texto => {
+                            console.error(texto);
+                        });
+                    }
+                })
+                .catch(function (erro) {
+                    console.log(erro);
+                });
+
+            return false;
+        }
+
+        function criarAlerta(icon, title) {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 1000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            });
+
+            Toast.fire({
+                icon: icon,
+                title: title
+            });
+        }
+    </script>
+</body>
+
+</html>

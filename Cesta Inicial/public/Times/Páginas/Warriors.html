@@ -10,7 +10,7 @@
     <title>Times - Warriors</title>
 </head>
 
-<body onload="carregarJogadores('Golden State Warriors'), carregarEstatistica('Golden State Warriors', '1D428A33', 'FFC72C', '1D428A')">
+<body onload="validarSessao(), carregarJogadores('Golden State Warriors'), carregarEstatistica('Golden State Warriors', '1D428A33', 'FFC72C', '1D428A')">
 
     <header>
         <div class="container">
@@ -21,6 +21,7 @@
                     <li><a href="./../../times.html">Times</a></li>
                     <li><a href="./../../jogos.html">Jogos</a></li>
                     <li><a href="./../../dashboard/mural.html">Mural</a></li>
+                    <li><a style="cursor:pointer;" onclick="limparSessao()">Sair</a></li>
                 </ul>
             </div>
         </div>
@@ -139,9 +140,9 @@
         </div>
         <p>
             Off RTG - Offensive Rating - Rating Ofensivo <br>
-            Def RTG - Defensive Rating - Rating Defensivo <br>
+            Def RTG - Defensive Rating - Rating Defensivo - <b style="color:rgb(34, 124, 214)">Quanto menor MELHOR.</b> <br>
             PTS/G - Points per Game - Pontos Por Jogo <br>
-            Opp PTS/G - Opponents Points Per Game - Pontos Por Jogo do Oponente <br>
+            Opp PTS/G - Opponents Points Per Game - Pontos Por Jogo do Oponente - <b style="color:rgb(34, 124, 214)">Quanto menor MELHOR.</b> <br>
             Pace - Posses por jogo / Velocidade do Time no Jogo <br>
         </p>
     </section>

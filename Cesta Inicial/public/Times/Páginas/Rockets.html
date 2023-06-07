@@ -10,7 +10,7 @@
     <title>Times - Rockets</title>
 </head>
 
-<body onload="carregarJogadores('Houston Rockets'), carregarEstatistica('Houston Rockets', 'CE114133', '010101', 'CE1141')">
+<body onload="validarSessao(), carregarJogadores('Houston Rockets'), carregarEstatistica('Houston Rockets', 'CE114133', '010101', 'CE1141')">
 
     <header>
         <div class="container">
@@ -21,6 +21,7 @@
                     <li><a href="./../../times.html">Times</a></li>
                     <li><a href="./../../jogos.html">Jogar</a></li>
                     <li><a href="./../../dashboard/mural.html">Mural</a></li>
+                    <li><a style="cursor:pointer;" onclick="limparSessao()">Sair</a></li>
                 </ul>
             </div>
         </div>
@@ -129,9 +130,9 @@
         </div>
         <p>
             Off RTG - Offensive Rating - Rating Ofensivo <br>
-            Def RTG - Defensive Rating - Rating Defensivo <br>
+            Def RTG - Defensive Rating - Rating Defensivo - <b style="color:rgb(34, 124, 214)">Quanto menor MELHOR.</b> <br>
             PTS/G - Points per Game - Pontos Por Jogo <br>
-            Opp PTS/G - Opponents Points Per Game - Pontos Por Jogo do Oponente <br>
+            Opp PTS/G - Opponents Points Per Game - Pontos Por Jogo do Oponente - <b style="color:rgb(34, 124, 214)">Quanto menor MELHOR.</b> <br>
             Pace - Posses por jogo / Velocidade do Time no Jogo <br>
         </p>
     </section>

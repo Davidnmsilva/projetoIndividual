@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/jogos.css">
 </head>
 
-<body style="background: #1f1f1f;">
+<body onload="validarSessao()" style="background: #1f1f1f;">
     <div class="wrapper">
         <div id="stars"></div>
         <div id="stars2"></div>
@@ -28,6 +28,7 @@
                     <li><a href="./times.html">Times</a></li>
                     <li><a href="">Jogos</a></li>
                     <li><a href="./dashboard/mural.html">Mural</a></li>
+                    <li><a style="cursor:pointer;" onclick="limparSessao()">Sair</a></li>
                 </ul>
             </div>
         </div>
